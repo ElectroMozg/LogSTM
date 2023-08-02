@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17161558186879542273">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;pRequestGeneratorConfig&apos; can be declared as pointer to const" verbose="Parameter &apos;pRequestGeneratorConfig&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="145" column="97" info="Parameter &apos;pRequestGeneratorConfig&apos; can be declared as pointer to const"/>
+            <symbol>pRequestGeneratorConfig</symbol>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:213:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="108" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:206:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="148" col="37" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:208:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="211" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:209:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="239" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:216:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="262" col="8" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:213:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="108" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:206:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="148" col="37" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:208:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="211" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:209:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="239" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:216:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="262" col="8" value="0"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:213:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="108" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:206:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="148" col="37" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:208:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="211" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:209:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="239" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:216:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="262" col="8" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:213:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="108" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:206:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="148" col="37" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:208:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="211" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:209:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="239" col="8" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h:216:19" my-argnr="1" my-argname="hdma" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" line="262" col="8" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_DMAEx_ConfigMuxSync" lineNumber="95"/>
+    <functiondecl functionName="HAL_DMAEx_ConfigMuxRequestGenerator" lineNumber="144"/>
+    <functiondecl functionName="HAL_DMAEx_EnableMuxRequestGenerator" lineNumber="203"/>
+    <functiondecl functionName="HAL_DMAEx_DisableMuxRequestGenerator" lineNumber="231"/>
+    <functiondecl functionName="HAL_DMAEx_MUX_IRQHandler" lineNumber="259"/>
+    <functiondecl functionName="HAL_DMAEx_ConfigMuxSync" lineNumber="95"/>
+    <functiondecl functionName="HAL_DMAEx_ConfigMuxRequestGenerator" lineNumber="144"/>
+    <functiondecl functionName="HAL_DMAEx_EnableMuxRequestGenerator" lineNumber="203"/>
+    <functiondecl functionName="HAL_DMAEx_DisableMuxRequestGenerator" lineNumber="231"/>
+    <functiondecl functionName="HAL_DMAEx_MUX_IRQHandler" lineNumber="259"/>
+    <functioncall functionName="HAL_BUSY"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_LOCKED"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="HAL_UNLOCKED"/>
+    <functioncall functionName="XferErrorCallback"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,16 @@
+HAL_RCC_DeInit global:[uwTickPrio] call:[HAL_GetTick,HAL_InitTick]
+HAL_RCC_OscConfig global:[uwTickPrio] call:[HAL_GetTick,HAL_InitTick,while]
+HAL_RCC_ClockConfig global:[uwTickPrio] call:[HAL_GetTick,HAL_InitTick,HAL_RCC_GetSysClockFreq] noreturn:[HAL_InitTick]
+HAL_RCC_MCOConfig call:[HAL_GPIO_Init,while]
+HAL_RCC_GetSysClockFreq
+HAL_RCC_GetHCLKFreq
+HAL_RCC_GetPCLK1Freq call:[HAL_RCC_GetHCLKFreq,LL_RCC_GetAPB1Prescaler,__LL_RCC_CALC_PCLK1_FREQ,return] noreturn:[return]
+HAL_RCC_GetOscConfig
+HAL_RCC_GetClockConfig
+HAL_RCC_EnableCSS
+HAL_RCC_EnableLSECSS
+HAL_RCC_DisableLSECSS
+HAL_RCC_NMI_IRQHandler call:[HAL_RCC_CSSCallback,HAL_RCC_LSECSSCallback] noreturn:[HAL_RCC_CSSCallback,HAL_RCC_LSECSSCallback]
+HAL_RCC_CSSCallback
+HAL_RCC_LSECSSCallback
+HAL_RCC_GetResetSource

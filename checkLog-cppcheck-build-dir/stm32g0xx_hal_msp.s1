@@ -1,0 +1,3 @@
+HAL_MspInit call:[READ_BIT,SET_BIT,while] noreturn:[while]
+HAL_UART_MspInit call:[Error_Handler,HAL_GPIO_Init,HAL_RCCEx_PeriphCLKConfig,READ_BIT,SET_BIT,while] noreturn:[Error_Handler,HAL_GPIO_Init]
+HAL_UART_MspDeInit call:[CLEAR_BIT,HAL_GPIO_DeInit] noreturn:[HAL_GPIO_DeInit]

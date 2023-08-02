@@ -1,0 +1,1 @@
+MX_GPIO_Init call:[LL_APB2_GRP1_EnableClock,LL_EXTI_Init,LL_GPIO_AF_SetEXTISource,LL_GPIO_Init,LL_GPIO_ResetOutputPin,LL_GPIO_SetOutputPin,LL_GPIO_SetPinMode,NVIC_EnableIRQ,NVIC_EncodePriority,NVIC_GetPriorityGrouping,NVIC_SetPriority] noreturn:[NVIC_EnableIRQ]

@@ -1,0 +1,1 @@
+MX_IWDG_Init global:[hiwdg] call:[Error_Handler,HAL_IWDG_Init] noreturn:[Error_Handler]

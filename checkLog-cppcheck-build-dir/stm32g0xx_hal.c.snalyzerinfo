@@ -1,0 +1,27 @@
+HAL_Init call:[HAL_InitTick,HAL_MspInit] noreturn:[HAL_MspInit]
+HAL_DeInit call:[HAL_MspDeInit]
+HAL_MspInit
+HAL_MspDeInit
+HAL_InitTick global:[uwTickFreq,uwTickPrio] call:[HAL_NVIC_SetPriority,HAL_SYSTICK_Config]
+HAL_IncTick global:[uwTickFreq]
+HAL_GetTick
+HAL_GetTickPrio global:[uwTickPrio]
+HAL_SetTickFreq global:[uwTickFreq,uwTickPrio] call:[HAL_InitTick]
+HAL_GetTickFreq global:[uwTickFreq]
+HAL_Delay global:[uwTickFreq] call:[HAL_GetTick]
+HAL_SuspendTick
+HAL_ResumeTick
+HAL_GetHalVersion call:[return] noreturn:[return]
+HAL_GetREVID call:[return] noreturn:[return]
+HAL_GetDEVID call:[return] noreturn:[return]
+HAL_GetUIDw0 call:[return] noreturn:[return]
+HAL_GetUIDw1 call:[return] noreturn:[return]
+HAL_GetUIDw2 call:[return] noreturn:[return]
+HAL_DBGMCU_EnableDBGStopMode
+HAL_DBGMCU_DisableDBGStopMode
+HAL_DBGMCU_EnableDBGStandbyMode
+HAL_DBGMCU_DisableDBGStandbyMode
+HAL_SYSCFG_EnableIOAnalogSwitchBooster
+HAL_SYSCFG_DisableIOAnalogSwitchBooster
+HAL_SYSCFG_EnableRemap
+HAL_SYSCFG_DisableRemap

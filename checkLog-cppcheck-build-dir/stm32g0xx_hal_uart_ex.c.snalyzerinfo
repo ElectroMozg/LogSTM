@@ -1,0 +1,18 @@
+HAL_RS485Ex_Init call:[HAL_UART_MspInit,UART_AdvFeatureConfig,UART_CheckIdleState,UART_SetConfig,return] noreturn:[HAL_UART_MspInit,UART_AdvFeatureConfig,return]
+HAL_UARTEx_WakeupCallback
+HAL_UARTEx_RxFifoFullCallback
+HAL_UARTEx_TxFifoEmptyCallback
+HAL_MultiProcessorEx_AddressLength_Set call:[UART_CheckIdleState,return] noreturn:[return]
+HAL_UARTEx_StopModeWakeUpSourceConfig call:[HAL_GetTick,UARTEx_Wakeup_AddressConfig,UART_WaitOnFlagUntilTimeout,while] noreturn:[UARTEx_Wakeup_AddressConfig]
+HAL_UARTEx_EnableStopMode call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_UARTEx_DisableStopMode call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_UARTEx_EnableFifoMode call:[UARTEx_SetNbDataToProcess,while]
+HAL_UARTEx_DisableFifoMode call:[while]
+HAL_UARTEx_SetTxFifoThreshold call:[UARTEx_SetNbDataToProcess,while]
+HAL_UARTEx_SetRxFifoThreshold call:[UARTEx_SetNbDataToProcess,while]
+HAL_UARTEx_ReceiveToIdle call:[HAL_GetTick,while]
+HAL_UARTEx_ReceiveToIdle_IT call:[UART_Start_Receive_IT,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UARTEx_ReceiveToIdle_DMA call:[UART_Start_Receive_DMA,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UARTEx_GetRxEventType call:[return] noreturn:[return]
+UARTEx_Wakeup_AddressConfig
+UARTEx_SetNbDataToProcess

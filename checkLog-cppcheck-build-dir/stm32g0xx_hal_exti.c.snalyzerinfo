@@ -1,0 +1,9 @@
+HAL_EXTI_SetConfigLine
+HAL_EXTI_GetConfigLine
+HAL_EXTI_ClearConfigLine
+HAL_EXTI_RegisterCallback
+HAL_EXTI_GetHandle
+HAL_EXTI_IRQHandler call:[FallingCallback,RisingCallback] noreturn:[FallingCallback,RisingCallback]
+HAL_EXTI_GetPending
+HAL_EXTI_ClearPending
+HAL_EXTI_GenerateSWI

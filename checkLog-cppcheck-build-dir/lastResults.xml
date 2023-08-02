@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.11"/>
+    <errors>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" cwe="398" file0="Core/Src/stm32g0xx_hal_msp.c" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_hal_msp.c" line="85"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" cwe="398" file0="Core/Src/stm32g0xx_hal_msp.c" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_hal_msp.c" line="132"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_close&amp;#039; is never used." verbose="The function &amp;#039;_close&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="92"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_execve&amp;#039; is never used." verbose="The function &amp;#039;_execve&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="169"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_exit&amp;#039; is never used." verbose="The function &amp;#039;_exit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="61"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_fork&amp;#039; is never used." verbose="The function &amp;#039;_fork&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="163"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_fstat&amp;#039; is never used." verbose="The function &amp;#039;_fstat&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="99"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_getpid&amp;#039; is never used." verbose="The function &amp;#039;_getpid&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="48"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_isatty&amp;#039; is never used." verbose="The function &amp;#039;_isatty&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="106"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_link&amp;#039; is never used." verbose="The function &amp;#039;_link&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="155"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_lseek&amp;#039; is never used." verbose="The function &amp;#039;_lseek&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="112"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_open&amp;#039; is never used." verbose="The function &amp;#039;_open&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="120"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_read&amp;#039; is never used." verbose="The function &amp;#039;_read&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="67"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_stat&amp;#039; is never used." verbose="The function &amp;#039;_stat&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="148"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_times&amp;#039; is never used." verbose="The function &amp;#039;_times&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="142"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_unlink&amp;#039; is never used." verbose="The function &amp;#039;_unlink&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="135"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_wait&amp;#039; is never used." verbose="The function &amp;#039;_wait&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="128"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_write&amp;#039; is never used." verbose="The function &amp;#039;_write&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="80"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;initialise_monitor_handles&amp;#039; is never used." verbose="The function &amp;#039;initialise_monitor_handles&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\syscalls.c" line="44"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;_sbrk&amp;#039; is never used." verbose="The function &amp;#039;_sbrk&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\sysmem.c" line="53"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;prevTickFreq&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;prevTickFreq&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="340"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DBGMCU_DisableDBGStandbyMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_DBGMCU_DisableDBGStandbyMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="535"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DBGMCU_DisableDBGStopMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_DBGMCU_DisableDBGStopMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="517"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DBGMCU_EnableDBGStandbyMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_DBGMCU_EnableDBGStandbyMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="526"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DBGMCU_EnableDBGStopMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_DBGMCU_EnableDBGStopMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="508"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DeInit&amp;#039; is never used." verbose="The function &amp;#039;HAL_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="180"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetDEVID&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetDEVID&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="453"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetHalVersion&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetHalVersion&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="435"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetREVID&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetREVID&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="444"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetTickFreq&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetTickFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="367"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetTickPrio&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetTickPrio&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="328"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetUIDw0&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetUIDw0&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="462"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetUIDw1&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetUIDw1&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="471"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GetUIDw2&amp;#039; is never used." verbose="The function &amp;#039;HAL_GetUIDw2&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="480"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_ResumeTick&amp;#039; is never used." verbose="The function &amp;#039;HAL_ResumeTick&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="425"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSCFG_DisableIOAnalogSwitchBooster&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSCFG_DisableIOAnalogSwitchBooster&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="660"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSCFG_DisableRemap&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSCFG_DisableRemap&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="688"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSCFG_EnableIOAnalogSwitchBooster&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSCFG_EnableIOAnalogSwitchBooster&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="651"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSCFG_EnableRemap&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSCFG_EnableRemap&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="673"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SetTickFreq&amp;#039; is never used." verbose="The function &amp;#039;HAL_SetTickFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="337"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SuspendTick&amp;#039; is never used." verbose="The function &amp;#039;HAL_SuspendTick&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="409"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hdma&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hdma&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="1032"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hdma&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hdma&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="1044"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_DeInit&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="259"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_GetState&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_GetState&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="1032"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="797"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_Init&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_Init&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="152"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_PollForTransfer&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_PollForTransfer&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="637"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_RegisterCallback&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_RegisterCallback&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="903"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_Start&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_Start&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="382"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMA_UnRegisterCallback&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMA_UnRegisterCallback&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma.c" line="954"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;pRequestGeneratorConfig&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;pRequestGeneratorConfig&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="145"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMAEx_ConfigMuxRequestGenerator&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMAEx_ConfigMuxRequestGenerator&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="144"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMAEx_ConfigMuxSync&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMAEx_ConfigMuxSync&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="95"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMAEx_DisableMuxRequestGenerator&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMAEx_DisableMuxRequestGenerator&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="231"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMAEx_EnableMuxRequestGenerator&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMAEx_EnableMuxRequestGenerator&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="203"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_DMAEx_MUX_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_DMAEx_MUX_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_dma_ex.c" line="259"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;pExtiConfig&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;pExtiConfig&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="143"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="265"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="359"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="555"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="599"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;hexti&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="635"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_ClearConfigLine&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_ClearConfigLine&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="359"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_ClearPending&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_ClearPending&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="599"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_GenerateSWI&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_GenerateSWI&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="635"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_GetConfigLine&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_GetConfigLine&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="265"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_GetHandle&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_GetHandle&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="460"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_GetPending&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_GetPending&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="555"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="501"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_RegisterCallback&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_RegisterCallback&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="425"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_EXTI_SetConfigLine&amp;#039; is never used." verbose="The function &amp;#039;HAL_EXTI_SetConfigLine&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="143"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;pOBInit&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;pOBInit&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="297"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;FLASH_FlushCaches&amp;#039; is never used." verbose="The function &amp;#039;FLASH_FlushCaches&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="619"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_Erase&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_Erase&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="154"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_Erase_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_Erase_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="226"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_FlashEmptyCheck&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_FlashEmptyCheck&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="488"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_ForceFlashEmpty&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_ForceFlashEmpty&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="502"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_OBGetConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_OBGetConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="421"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASHEx_OBProgram&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASHEx_OBProgram&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="297"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;GPIOx-&amp;gt;LCKR&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;GPIOx-&amp;gt;LCKR&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="465" info="GPIOx-&amp;gt;LCKR is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="463" info="GPIOx-&amp;gt;LCKR is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;GPIOx-&amp;gt;LCKR&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;GPIOx-&amp;gt;LCKR&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="467" info="GPIOx-&amp;gt;LCKR is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="465" info="GPIOx-&amp;gt;LCKR is assigned"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;iocurrent&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;iocurrent&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="165"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;iocurrent&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;iocurrent&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="292"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;GPIO_Init&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;GPIO_Init&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="162"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;GPIOx&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;GPIOx&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="370"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GPIO_EXTI_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_GPIO_EXTI_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="487"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GPIO_LockPin&amp;#039; is never used." verbose="The function &amp;#039;HAL_GPIO_LockPin&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="452"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_GPIO_ReadPin&amp;#039; is never used." verbose="The function &amp;#039;HAL_GPIO_ReadPin&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c" line="370"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;wait_loop_index&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;wait_loop_index&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="764"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisableBatteryCharging&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisableBatteryCharging&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="146"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisableFlashPowerDown&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisableFlashPowerDown&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="722"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisableGPIOPullDown&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisableGPIOPullDown&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="600"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisableGPIOPullUp&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisableGPIOPullUp&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="476"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisableInternalWakeUpLine&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisableInternalWakeUpLine&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="390"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_DisablePullUpPullDownConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_DisablePullUpPullDownConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="664"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnableBatteryCharging&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnableBatteryCharging&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="131"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnableFlashPowerDown&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnableFlashPowerDown&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="704"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnableGPIOPullDown&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnableGPIOPullDown&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="538"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnableGPIOPullUp&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnableGPIOPullUp&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="414"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnableInternalWakeUpLine&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnableInternalWakeUpLine&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="381"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_EnablePullUpPullDownConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_EnablePullUpPullDownConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="653"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWREx_GetVoltageRange&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWREx_GetVoltageRange&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="736"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;hsidiv&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;hsidiv&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1115"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;RCC_ClkInitStruct&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;RCC_ClkInitStruct&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="806"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_DeInit&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="218"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_DisableLSECSS&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_DisableLSECSS&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1368"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_EnableCSS&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_EnableCSS&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1341"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_EnableLSECSS&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_EnableLSECSS&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1357"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_GetClockConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_GetClockConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1308"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_GetOscConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_GetOscConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1205"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_GetResetSource&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_GetResetSource&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1428"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_MCOConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_MCOConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1035"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCC_NMI_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCC_NMI_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1378"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;(huart)-&amp;gt;Instance-&amp;gt;CR1&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;(huart)-&amp;gt;Instance-&amp;gt;CR1&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="639" info="(huart)-&amp;gt;Instance-&amp;gt;CR1 is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="637" info="(huart)-&amp;gt;Instance-&amp;gt;CR1 is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2832" info="huart-&amp;gt;gState is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2827" info="huart-&amp;gt;gState is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2870" info="huart-&amp;gt;gState is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2865" info="huart-&amp;gt;gState is assigned"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="3003" info="huart-&amp;gt;gState is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2998" info="huart-&amp;gt;gState is assigned"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1129"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1130"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1131"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1230"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1231"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1233"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;lpuart_ker_ck_pres&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;lpuart_ker_ck_pres&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="3105"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tmp&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tmp&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="4089"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;nb_tx_data&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;nb_tx_data&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="4121"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tmp&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tmp&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="4161"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;nb_tx_data&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;nb_tx_data&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="4162"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_HalfDuplex_EnableReceiver&amp;#039; is never used." verbose="The function &amp;#039;HAL_HalfDuplex_EnableReceiver&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2967"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_HalfDuplex_EnableTransmitter&amp;#039; is never used." verbose="The function &amp;#039;HAL_HalfDuplex_EnableTransmitter&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2944"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_HalfDuplex_Init&amp;#039; is never used." verbose="The function &amp;#039;HAL_HalfDuplex_Init&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="380"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_LIN_Init&amp;#039; is never used." verbose="The function &amp;#039;HAL_LIN_Init&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="453"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_LIN_SendBreak&amp;#039; is never used." verbose="The function &amp;#039;HAL_LIN_SendBreak&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2991"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_MultiProcessor_DisableMuteMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_MultiProcessor_DisableMuteMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2914"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_MultiProcessor_EnableMuteMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_MultiProcessor_EnableMuteMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2894"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_MultiProcessor_EnterMuteMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_MultiProcessor_EnterMuteMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2934"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_MultiProcessor_Init&amp;#039; is never used." verbose="The function &amp;#039;HAL_MultiProcessor_Init&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="550"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Abort&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Abort&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1736"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_AbortReceive&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_AbortReceive&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1898"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_AbortReceive_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_AbortReceive_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2210"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_AbortTransmit&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_AbortTransmit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1839"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_AbortTransmit_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_AbortTransmit_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2119"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Abort_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Abort_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1966"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_DMAPause&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_DMAPause&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1600"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_DMAResume&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_DMAResume&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1630"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_DMAStop&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_DMAStop&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1661"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_DeInit&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="624"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_DisableReceiverTimeout&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_DisableReceiverTimeout&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2856"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_EnableReceiverTimeout&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_EnableReceiverTimeout&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2818"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_GetError&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_GetError&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="3052"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_GetState&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_GetState&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="3036"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2303"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Receive&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Receive&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1228"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Receive_DMA&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Receive_DMA&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1553"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Receive_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Receive_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1410"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_ReceiverTimeout_Config&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_ReceiverTimeout_Config&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="2803"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Transmit&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Transmit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1127"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Transmit_DMA&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Transmit_DMA&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1467"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UART_Transmit_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UART_Transmit_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart.c" line="1326"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;huart-&amp;gt;gState&amp;#039; is reassigned a value before the old one has been used." cwe="563" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="584" info="huart-&amp;gt;gState is overwritten"/>
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="569" info="huart-&amp;gt;gState is assigned"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata8bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="719"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pdata16bits&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="720"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tickstart&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="722"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;status&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;status&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="857"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;status&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;status&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="934"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;rx_fifo_depth&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;rx_fifo_depth&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1055"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tx_fifo_depth&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tx_fifo_depth&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1056"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;rx_fifo_threshold&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;rx_fifo_threshold&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1057"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;tx_fifo_threshold&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;tx_fifo_threshold&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1058"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" verbose="Parameter &amp;#039;huart&amp;#039; can be declared as pointer to const" cwe="398" file0="Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1011"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_MultiProcessorEx_AddressLength_Set&amp;#039; is never used." verbose="The function &amp;#039;HAL_MultiProcessorEx_AddressLength_Set&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="387"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RS485Ex_Init&amp;#039; is never used." verbose="The function &amp;#039;HAL_RS485Ex_Init&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="166"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_DisableStopMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_DisableStopMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="499"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_EnableFifoMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_EnableFifoMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="518"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_EnableStopMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_EnableStopMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="480"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_GetRxEventType&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_GetRxEventType&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1011"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_ReceiveToIdle&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_ReceiveToIdle&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="716"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_ReceiveToIdle_DMA&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_ReceiveToIdle_DMA&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="932"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_ReceiveToIdle_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_ReceiveToIdle_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="855"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_UARTEx_StopModeWakeUpSourceConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_UARTEx_StopModeWakeUpSourceConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="425"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_GetError&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_GetError&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="566"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="282"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_Lock&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_Lock&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="457"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_OB_Launch&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_OB_Launch&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="521"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_OB_Lock&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_OB_Lock&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="501"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_OB_Unlock&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_OB_Unlock&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="477"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_Program&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_Program&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="164"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_Program_IT&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_Program_IT&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="226"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_FLASH_Unlock&amp;#039; is never used." verbose="The function &amp;#039;HAL_FLASH_Unlock&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash.c" line="433"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_ClearPendingIRQ&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_ClearPendingIRQ&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="268"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_DisableIRQ&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_DisableIRQ&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="164"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_EnableIRQ&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_EnableIRQ&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="148"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_GetPendingIRQ&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_GetPendingIRQ&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="252"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_GetPriority&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_GetPriority&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="221"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_SetPendingIRQ&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_SetPendingIRQ&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="234"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_NVIC_SystemReset&amp;#039; is never used." verbose="The function &amp;#039;HAL_NVIC_SystemReset&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="177"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSTICK_CLKSourceConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSTICK_CLKSourceConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="285"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_SYSTICK_IRQHandler&amp;#039; is never used." verbose="The function &amp;#039;HAL_SYSTICK_IRQHandler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_cortex.c" line="303"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_DeInit&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="73"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_DisableSEVOnPend&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_DisableSEVOnPend&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="521"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_DisableSleepOnExit&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_DisableSleepOnExit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="494"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_DisableWakeUpPin&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_DisableWakeUpPin&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="284"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnableSEVOnPend&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnableSEVOnPend&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="508"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnableSleepOnExit&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnableSleepOnExit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="480"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnableWakeUpPin&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnableWakeUpPin&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="262"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnterSLEEPMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnterSLEEPMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="318"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnterSTANDBYMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnterSTANDBYMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="453"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_PWR_EnterSTOPMode&amp;#039; is never used." verbose="The function &amp;#039;HAL_PWR_EnterSTOPMode&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr.c" line="398"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCCEx_DisableLSCO&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCCEx_DisableLSCO&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c" line="1263"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCCEx_EnableLSCO&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCCEx_EnableLSCO&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c" line="1216"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCCEx_GetPeriphCLKConfig&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCCEx_GetPeriphCLKConfig&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c" line="469"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HAL_RCCEx_GetPeriphCLKFreq&amp;#039; is never used." verbose="The function &amp;#039;HAL_RCCEx_GetPeriphCLKFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc_ex.c" line="610"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;HardFault_Handler&amp;#039; is never used." verbose="The function &amp;#039;HardFault_Handler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_it.c" line="84"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;NMI_Handler&amp;#039; is never used." verbose="The function &amp;#039;NMI_Handler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_it.c" line="69"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;PendSV_Handler&amp;#039; is never used." verbose="The function &amp;#039;PendSV_Handler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_it.c" line="112"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SVC_Handler&amp;#039; is never used." verbose="The function &amp;#039;SVC_Handler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_it.c" line="99"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SysTick_Handler&amp;#039; is never used." verbose="The function &amp;#039;SysTick_Handler&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\stm32g0xx_it.c" line="125"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_DeInit&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_DeInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="166"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetADCClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetADCClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="895"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetI2CClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetI2CClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="367"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetI2SClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetI2SClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="435"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetRTCClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetRTCClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="935"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetSystemClocksFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetSystemClocksFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="234"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetUSARTClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetUSARTClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="255"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;LL_RCC_GetUSBClockFreq&amp;#039; is never used." verbose="The function &amp;#039;LL_RCC_GetUSBClockFreq&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_ll_rcc.c" line="978"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SystemCoreClockUpdate&amp;#039; is never used." verbose="The function &amp;#039;SystemCoreClockUpdate&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\system_stm32g0xx.c" line="233"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;SystemInit&amp;#039; is never used." verbose="The function &amp;#039;SystemInit&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Core\Src\system_stm32g0xx.c" line="185"/>
+        </error>
+    </errors>
+</results>

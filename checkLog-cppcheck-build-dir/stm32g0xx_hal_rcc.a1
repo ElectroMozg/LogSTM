@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10345191652437262474">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;hsidiv&apos; can be reduced." verbose="The scope of the variable &apos;hsidiv&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="1115" column="43"/>
+            <symbol>hsidiv</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;RCC_ClkInitStruct&apos; can be declared as pointer to const" verbose="Parameter &apos;RCC_ClkInitStruct&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_rcc.c" line="806" column="60" info="Parameter &apos;RCC_ClkInitStruct&apos; can be declared as pointer to const"/>
+            <symbol>RCC_ClkInitStruct</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:320:19" call-funcname="HAL_GPIO_Init" call-argnr="2" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1056" col="18" call-argexpr="&amp;GPIO_InitStruct" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3105:19" my-argnr="1" my-argname="RCC_OscInitStruct" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1215" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3106:19" my-argnr="1" my-argname="RCC_ClkInitStruct" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1315" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3106:19" my-argnr="2" my-argname="pFLatency" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1328" col="4" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:320:19" call-funcname="HAL_GPIO_Init" call-argnr="2" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1056" col="18" call-argexpr="&amp;GPIO_InitStruct" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3105:19" my-argnr="1" my-argname="RCC_OscInitStruct" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1212" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3106:19" my-argnr="1" my-argname="RCC_ClkInitStruct" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1315" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3106:19" my-argnr="2" my-argname="pFLatency" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.c" line="1328" col="4" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_RCC_DeInit" lineNumber="218"/>
+    <functiondecl functionName="HAL_RCC_OscConfig" lineNumber="310"/>
+    <functiondecl functionName="HAL_RCC_ClockConfig" lineNumber="806"/>
+    <functiondecl functionName="HAL_RCC_MCOConfig" lineNumber="1035"/>
+    <functiondecl functionName="HAL_RCC_GetSysClockFreq" lineNumber="1113"/>
+    <functiondecl functionName="HAL_RCC_GetHCLKFreq" lineNumber="1181"/>
+    <functiondecl functionName="HAL_RCC_GetPCLK1Freq" lineNumber="1192"/>
+    <functiondecl functionName="HAL_RCC_GetOscConfig" lineNumber="1205"/>
+    <functiondecl functionName="HAL_RCC_GetClockConfig" lineNumber="1308"/>
+    <functiondecl functionName="HAL_RCC_EnableCSS" lineNumber="1341"/>
+    <functiondecl functionName="HAL_RCC_EnableLSECSS" lineNumber="1357"/>
+    <functiondecl functionName="HAL_RCC_DisableLSECSS" lineNumber="1368"/>
+    <functiondecl functionName="HAL_RCC_NMI_IRQHandler" lineNumber="1378"/>
+    <functiondecl functionName="HAL_RCC_CSSCallback" lineNumber="1404"/>
+    <functiondecl functionName="HAL_RCC_LSECSSCallback" lineNumber="1415"/>
+    <functiondecl functionName="HAL_RCC_GetResetSource" lineNumber="1428"/>
+    <functiondecl functionName="HAL_RCC_DeInit" lineNumber="218"/>
+    <functiondecl functionName="HAL_RCC_OscConfig" lineNumber="310"/>
+    <functiondecl functionName="HAL_RCC_ClockConfig" lineNumber="806"/>
+    <functiondecl functionName="HAL_RCC_MCOConfig" lineNumber="1035"/>
+    <functiondecl functionName="HAL_RCC_GetSysClockFreq" lineNumber="1113"/>
+    <functiondecl functionName="HAL_RCC_GetHCLKFreq" lineNumber="1181"/>
+    <functiondecl functionName="HAL_RCC_GetPCLK1Freq" lineNumber="1192"/>
+    <functiondecl functionName="HAL_RCC_GetOscConfig" lineNumber="1205"/>
+    <functiondecl functionName="HAL_RCC_GetClockConfig" lineNumber="1308"/>
+    <functiondecl functionName="HAL_RCC_EnableCSS" lineNumber="1341"/>
+    <functiondecl functionName="HAL_RCC_EnableLSECSS" lineNumber="1357"/>
+    <functiondecl functionName="HAL_RCC_DisableLSECSS" lineNumber="1368"/>
+    <functiondecl functionName="HAL_RCC_NMI_IRQHandler" lineNumber="1378"/>
+    <functiondecl functionName="HAL_RCC_CSSCallback" lineNumber="1404"/>
+    <functiondecl functionName="HAL_RCC_LSECSSCallback" lineNumber="1415"/>
+    <functiondecl functionName="HAL_RCC_GetResetSource" lineNumber="1428"/>
+    <functioncall functionName="APBENR1"/>
+    <functioncall functionName="BDCR"/>
+    <functioncall functionName="CIFR"/>
+    <functioncall functionName="CR"/>
+    <functioncall functionName="CR1"/>
+    <functioncall functionName="CSR"/>
+    <functioncall functionName="FLASH_ACR_LATENCY"/>
+    <functioncall functionName="GPIOA"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_GPIO_Init"/>
+    <functioncall functionName="HAL_GetTick"/>
+    <functioncall functionName="HAL_InitTick"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="HAL_RCC_CSSCallback"/>
+    <functioncall functionName="HAL_RCC_GetHCLKFreq"/>
+    <functioncall functionName="HAL_RCC_GetSysClockFreq"/>
+    <functioncall functionName="HAL_RCC_LSECSSCallback"/>
+    <functioncall functionName="HAL_TIMEOUT"/>
+    <functioncall functionName="IOPENR"/>
+    <functioncall functionName="LL_RCC_GetAPB1Prescaler"/>
+    <functioncall functionName="PLLCFGR"/>
+    <functioncall functionName="PWR_CR1_DBP"/>
+    <functioncall functionName="RCC_APBENR1_PWREN"/>
+    <functioncall functionName="RCC_BDCR_LSEBYP"/>
+    <functioncall functionName="RCC_BDCR_LSECSSON"/>
+    <functioncall functionName="RCC_BDCR_LSEON"/>
+    <functioncall functionName="RCC_BDCR_LSERDY"/>
+    <functioncall functionName="RCC_CFGR_HPRE"/>
+    <functioncall functionName="RCC_CFGR_MCOPRE"/>
+    <functioncall functionName="RCC_CFGR_PPRE"/>
+    <functioncall functionName="RCC_CFGR_PPRE_0"/>
+    <functioncall functionName="RCC_CFGR_SW"/>
+    <functioncall functionName="RCC_CFGR_SWS"/>
+    <functioncall functionName="RCC_CFGR_SWS_0"/>
+    <functioncall functionName="RCC_CFGR_SW_0"/>
+    <functioncall functionName="RCC_CIFR_LSECSSF"/>
+    <functioncall functionName="RCC_CR_CSSON"/>
+    <functioncall functionName="RCC_CR_HSEBYP"/>
+    <functioncall functionName="RCC_CR_HSEON"/>
+    <functioncall functionName="RCC_CR_HSERDY"/>
+    <functioncall functionName="RCC_CR_HSI48ON"/>
+    <functioncall functionName="RCC_CR_HSI48RDY"/>
+    <functioncall functionName="RCC_CR_HSIDIV"/>
+    <functioncall functionName="RCC_CR_HSION"/>
+    <functioncall functionName="RCC_CR_HSIRDY"/>
+    <functioncall functionName="RCC_CR_PLLON"/>
+    <functioncall functionName="RCC_CR_PLLRDY"/>
+    <functioncall functionName="RCC_CSR_LPWRRSTF"/>
+    <functioncall functionName="RCC_CSR_LSION"/>
+    <functioncall functionName="RCC_CSR_LSIRDY"/>
+    <functioncall functionName="RCC_ICSCR_HSITRIM"/>
+    <functioncall functionName="RCC_ICSCR_HSITRIM_6"/>
+    <functioncall functionName="RCC_IOPENR_GPIOAEN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLM"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLN_4"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLP"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLR"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLREN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLSRC"/>
+    <functioncall functionName="RESET"/>
+    <functioncall functionName="SET"/>
+    <functioncall functionName="SystemCoreClock"/>
+    <functioncall functionName="__LL_RCC_CALC_PCLK1_FREQ"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,5 @@
+main call:[HAL_Delay,HAL_GPIO_TogglePin,HAL_Init,MX_GPIO_Init,MX_USART2_UART_Init,SystemClock_Config]
+SystemClock_Config call:[Error_Handler,HAL_PWREx_ControlVoltageScaling,HAL_RCC_ClockConfig,HAL_RCC_OscConfig] noreturn:[Error_Handler]
+MX_USART2_UART_Init global:[huart2] call:[Error_Handler,HAL_UARTEx_DisableFifoMode,HAL_UARTEx_SetRxFifoThreshold,HAL_UARTEx_SetTxFifoThreshold,HAL_UART_Init] noreturn:[Error_Handler]
+MX_GPIO_Init call:[HAL_GPIO_Init,HAL_GPIO_WritePin,while] noreturn:[HAL_GPIO_Init]
+Error_Handler call:[__disable_irq]

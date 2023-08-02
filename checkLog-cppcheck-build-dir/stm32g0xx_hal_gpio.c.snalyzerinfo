@@ -1,0 +1,9 @@
+HAL_GPIO_Init
+HAL_GPIO_DeInit
+HAL_GPIO_ReadPin
+HAL_GPIO_WritePin
+HAL_GPIO_TogglePin
+HAL_GPIO_LockPin
+HAL_GPIO_EXTI_IRQHandler call:[HAL_GPIO_EXTI_Falling_Callback,HAL_GPIO_EXTI_Rising_Callback] noreturn:[HAL_GPIO_EXTI_Falling_Callback,HAL_GPIO_EXTI_Rising_Callback]
+HAL_GPIO_EXTI_Rising_Callback
+HAL_GPIO_EXTI_Falling_Callback

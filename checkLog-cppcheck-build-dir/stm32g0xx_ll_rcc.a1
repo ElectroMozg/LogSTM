@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="16785164637577422737">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:3924:13" my-argnr="1" my-argname="RCC_Clocks" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c" line="237" col="3" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:3924:13" my-argnr="1" my-argname="RCC_Clocks" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c" line="237" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:3924:13" my-argnr="1" my-argname="RCC_Clocks" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c" line="237" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="LL_RCC_DeInit" lineNumber="166"/>
+    <functiondecl functionName="LL_RCC_GetSystemClocksFreq" lineNumber="234"/>
+    <functiondecl functionName="LL_RCC_GetUSARTClockFreq" lineNumber="255"/>
+    <functiondecl functionName="LL_RCC_GetI2CClockFreq" lineNumber="367"/>
+    <functiondecl functionName="LL_RCC_GetI2SClockFreq" lineNumber="435"/>
+    <functiondecl functionName="LL_RCC_GetADCClockFreq" lineNumber="895"/>
+    <functiondecl functionName="LL_RCC_GetRTCClockFreq" lineNumber="935"/>
+    <functiondecl functionName="LL_RCC_GetUSBClockFreq" lineNumber="978"/>
+    <functiondecl functionName="RCC_GetSystemClockFreq" lineNumber="1039"/>
+    <functiondecl functionName="RCC_GetHCLKClockFreq" lineNumber="1070"/>
+    <functiondecl functionName="RCC_GetPCLK1ClockFreq" lineNumber="1081"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_SYS" lineNumber="1090"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_ADC" lineNumber="1121"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_I2S1" lineNumber="1182"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_USB" lineNumber="1275"/>
+    <functiondecl functionName="LL_RCC_DeInit" lineNumber="166"/>
+    <functiondecl functionName="LL_RCC_GetSystemClocksFreq" lineNumber="234"/>
+    <functiondecl functionName="LL_RCC_GetUSARTClockFreq" lineNumber="255"/>
+    <functiondecl functionName="LL_RCC_GetI2CClockFreq" lineNumber="367"/>
+    <functiondecl functionName="LL_RCC_GetI2SClockFreq" lineNumber="435"/>
+    <functiondecl functionName="LL_RCC_GetADCClockFreq" lineNumber="895"/>
+    <functiondecl functionName="LL_RCC_GetRTCClockFreq" lineNumber="935"/>
+    <functiondecl functionName="RCC_GetSystemClockFreq" lineNumber="1039"/>
+    <functiondecl functionName="RCC_GetHCLKClockFreq" lineNumber="1070"/>
+    <functiondecl functionName="RCC_GetPCLK1ClockFreq" lineNumber="1081"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_SYS" lineNumber="1090"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_ADC" lineNumber="1121"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_I2S1" lineNumber="1182"/>
+    <functiondecl functionName="LL_RCC_DeInit" lineNumber="166"/>
+    <functiondecl functionName="LL_RCC_GetSystemClocksFreq" lineNumber="234"/>
+    <functiondecl functionName="LL_RCC_GetUSARTClockFreq" lineNumber="255"/>
+    <functiondecl functionName="LL_RCC_GetI2CClockFreq" lineNumber="367"/>
+    <functiondecl functionName="LL_RCC_GetI2SClockFreq" lineNumber="435"/>
+    <functiondecl functionName="LL_RCC_GetADCClockFreq" lineNumber="895"/>
+    <functiondecl functionName="LL_RCC_GetRTCClockFreq" lineNumber="935"/>
+    <functiondecl functionName="LL_RCC_GetUSBClockFreq" lineNumber="978"/>
+    <functiondecl functionName="RCC_GetSystemClockFreq" lineNumber="1039"/>
+    <functiondecl functionName="RCC_GetHCLKClockFreq" lineNumber="1070"/>
+    <functiondecl functionName="RCC_GetPCLK1ClockFreq" lineNumber="1081"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_SYS" lineNumber="1090"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_ADC" lineNumber="1121"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_I2S1" lineNumber="1182"/>
+    <functiondecl functionName="RCC_PLL_GetFreqDomain_USB" lineNumber="1275"/>
+    <functioncall functionName="BDCR"/>
+    <functioncall functionName="CCIPR"/>
+    <functioncall functionName="CCIPR2"/>
+    <functioncall functionName="CFGR"/>
+    <functioncall functionName="CICR"/>
+    <functioncall functionName="CIER"/>
+    <functioncall functionName="CIFR"/>
+    <functioncall functionName="CR"/>
+    <functioncall functionName="CRRCR"/>
+    <functioncall functionName="CSR"/>
+    <functioncall functionName="ICSCR"/>
+    <functioncall functionName="LL_RCC_GetADCClockSource"/>
+    <functioncall functionName="LL_RCC_GetAHBPrescaler"/>
+    <functioncall functionName="LL_RCC_GetAPB1Prescaler"/>
+    <functioncall functionName="LL_RCC_GetI2CClockSource"/>
+    <functioncall functionName="LL_RCC_GetI2SClockSource"/>
+    <functioncall functionName="LL_RCC_GetRTCClockSource"/>
+    <functioncall functionName="LL_RCC_GetSysClkSource"/>
+    <functioncall functionName="LL_RCC_GetUSARTClockSource"/>
+    <functioncall functionName="LL_RCC_GetUSBClockSource"/>
+    <functioncall functionName="LL_RCC_HSE_IsReady"/>
+    <functioncall functionName="LL_RCC_HSI48_IsReady"/>
+    <functioncall functionName="LL_RCC_HSI_Enable"/>
+    <functioncall functionName="LL_RCC_HSI_IsReady"/>
+    <functioncall functionName="LL_RCC_HSI_SetCalibTrimming"/>
+    <functioncall functionName="LL_RCC_LSE_IsReady"/>
+    <functioncall functionName="LL_RCC_LSI_IsReady"/>
+    <functioncall functionName="LL_RCC_PLL_GetDivider"/>
+    <functioncall functionName="LL_RCC_PLL_GetMainSource"/>
+    <functioncall functionName="LL_RCC_PLL_GetN"/>
+    <functioncall functionName="LL_RCC_PLL_GetP"/>
+    <functioncall functionName="LL_RCC_PLL_GetQ"/>
+    <functioncall functionName="LL_RCC_PLL_GetR"/>
+    <functioncall functionName="LL_RCC_PLL_IsEnabledDomain_ADC"/>
+    <functioncall functionName="LL_RCC_PLL_IsEnabledDomain_I2S1"/>
+    <functioncall functionName="LL_RCC_PLL_IsEnabledDomain_USB"/>
+    <functioncall functionName="LL_RCC_PLL_IsReady"/>
+    <functioncall functionName="PLLCFGR"/>
+    <functioncall functionName="RCC_BDCR_BDRST"/>
+    <functioncall functionName="RCC_BDCR_LSCOEN"/>
+    <functioncall functionName="RCC_BDCR_LSCOSEL"/>
+    <functioncall functionName="RCC_BDCR_LSEBYP"/>
+    <functioncall functionName="RCC_BDCR_LSECSSD"/>
+    <functioncall functionName="RCC_BDCR_LSECSSON"/>
+    <functioncall functionName="RCC_BDCR_LSEDRV"/>
+    <functioncall functionName="RCC_BDCR_LSEON"/>
+    <functioncall functionName="RCC_BDCR_LSERDY"/>
+    <functioncall functionName="RCC_BDCR_RTCEN"/>
+    <functioncall functionName="RCC_BDCR_RTCSEL"/>
+    <functioncall functionName="RCC_CCIPR2_I2S1SEL"/>
+    <functioncall functionName="RCC_CCIPR2_I2S1SEL_0"/>
+    <functioncall functionName="RCC_CCIPR2_I2S1SEL_1"/>
+    <functioncall functionName="RCC_CCIPR2_USBSEL"/>
+    <functioncall functionName="RCC_CCIPR_ADCSEL"/>
+    <functioncall functionName="RCC_CCIPR_I2C1SEL_0"/>
+    <functioncall functionName="RCC_CCIPR_I2C1SEL_1"/>
+    <functioncall functionName="RCC_CCIPR_I2S1SEL"/>
+    <functioncall functionName="RCC_CCIPR_USART1SEL"/>
+    <functioncall functionName="RCC_CCIPR_USART1SEL_0"/>
+    <functioncall functionName="RCC_CCIPR_USART1SEL_1"/>
+    <functioncall functionName="RCC_CFGR_HPRE"/>
+    <functioncall functionName="RCC_CFGR_MCOPRE"/>
+    <functioncall functionName="RCC_CFGR_PPRE"/>
+    <functioncall functionName="RCC_CFGR_SW"/>
+    <functioncall functionName="RCC_CFGR_SWS"/>
+    <functioncall functionName="RCC_CICR_CSSC"/>
+    <functioncall functionName="RCC_CICR_HSERDYC"/>
+    <functioncall functionName="RCC_CICR_HSI48RDYC"/>
+    <functioncall functionName="RCC_CICR_HSIRDYC"/>
+    <functioncall functionName="RCC_CICR_LSECSSC"/>
+    <functioncall functionName="RCC_CICR_LSERDYC"/>
+    <functioncall functionName="RCC_CICR_LSIRDYC"/>
+    <functioncall functionName="RCC_CICR_PLLRDYC"/>
+    <functioncall functionName="RCC_CIER_HSERDYIE"/>
+    <functioncall functionName="RCC_CIER_HSI48RDYIE"/>
+    <functioncall functionName="RCC_CIER_HSIRDYIE"/>
+    <functioncall functionName="RCC_CIER_LSERDYIE"/>
+    <functioncall functionName="RCC_CIER_LSIRDYIE"/>
+    <functioncall functionName="RCC_CIER_PLLRDYIE"/>
+    <functioncall functionName="RCC_CIFR_CSSF"/>
+    <functioncall functionName="RCC_CIFR_HSERDYF"/>
+    <functioncall functionName="RCC_CIFR_HSI48RDYF"/>
+    <functioncall functionName="RCC_CIFR_HSIRDYF"/>
+    <functioncall functionName="RCC_CIFR_LSECSSF"/>
+    <functioncall functionName="RCC_CIFR_LSERDYF"/>
+    <functioncall functionName="RCC_CIFR_LSIRDYF"/>
+    <functioncall functionName="RCC_CIFR_PLLRDYF"/>
+    <functioncall functionName="RCC_CRRCR_HSI48CAL"/>
+    <functioncall functionName="RCC_CR_CSSON"/>
+    <functioncall functionName="RCC_CR_HSEBYP"/>
+    <functioncall functionName="RCC_CR_HSEON"/>
+    <functioncall functionName="RCC_CR_HSERDY"/>
+    <functioncall functionName="RCC_CR_HSI48ON"/>
+    <functioncall functionName="RCC_CR_HSI48RDY"/>
+    <functioncall functionName="RCC_CR_HSIDIV"/>
+    <functioncall functionName="RCC_CR_HSIKERON"/>
+    <functioncall functionName="RCC_CR_HSION"/>
+    <functioncall functionName="RCC_CR_HSIRDY"/>
+    <functioncall functionName="RCC_CR_PLLON"/>
+    <functioncall functionName="RCC_CR_PLLRDY"/>
+    <functioncall functionName="RCC_CSR_IWDGRSTF"/>
+    <functioncall functionName="RCC_CSR_LPWRRSTF"/>
+    <functioncall functionName="RCC_CSR_LSION"/>
+    <functioncall functionName="RCC_CSR_LSIRDY"/>
+    <functioncall functionName="RCC_CSR_OBLRSTF"/>
+    <functioncall functionName="RCC_CSR_PINRSTF"/>
+    <functioncall functionName="RCC_CSR_PWRRSTF"/>
+    <functioncall functionName="RCC_CSR_RMVF"/>
+    <functioncall functionName="RCC_CSR_SFTRSTF"/>
+    <functioncall functionName="RCC_CSR_WWDGRSTF"/>
+    <functioncall functionName="RCC_GetHCLKClockFreq"/>
+    <functioncall functionName="RCC_GetPCLK1ClockFreq"/>
+    <functioncall functionName="RCC_GetSystemClockFreq"/>
+    <functioncall functionName="RCC_ICSCR_HSICAL"/>
+    <functioncall functionName="RCC_ICSCR_HSITRIM"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLM"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLP"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLPEN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLQ"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLQEN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLR"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLREN"/>
+    <functioncall functionName="RCC_PLLCFGR_PLLSRC"/>
+    <functioncall functionName="RCC_PLL_GetFreqDomain_ADC"/>
+    <functioncall functionName="RCC_PLL_GetFreqDomain_I2S1"/>
+    <functioncall functionName="RCC_PLL_GetFreqDomain_SYS"/>
+    <functioncall functionName="RCC_PLL_GetFreqDomain_USB"/>
+    <functioncall functionName="SUCCESS"/>
+  </FileInfo>
+</analyzerinfo>

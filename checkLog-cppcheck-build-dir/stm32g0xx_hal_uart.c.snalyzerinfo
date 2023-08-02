@@ -1,0 +1,70 @@
+HAL_UART_Init call:[HAL_UART_MspInit,UART_AdvFeatureConfig,UART_CheckIdleState,UART_SetConfig,return] noreturn:[HAL_UART_MspInit,UART_AdvFeatureConfig,return]
+HAL_HalfDuplex_Init call:[HAL_UART_MspInit,UART_AdvFeatureConfig,UART_CheckIdleState,UART_SetConfig,return] noreturn:[HAL_UART_MspInit,UART_AdvFeatureConfig,return]
+HAL_LIN_Init call:[HAL_UART_MspInit,UART_AdvFeatureConfig,UART_CheckIdleState,UART_SetConfig,return] noreturn:[HAL_UART_MspInit,UART_AdvFeatureConfig,return]
+HAL_MultiProcessor_Init call:[HAL_UART_MspInit,UART_AdvFeatureConfig,UART_CheckIdleState,UART_SetConfig,return] noreturn:[HAL_UART_MspInit,UART_AdvFeatureConfig,return]
+HAL_UART_DeInit call:[HAL_UART_MspDeInit,while]
+HAL_UART_MspInit
+HAL_UART_MspDeInit
+HAL_UART_Transmit call:[HAL_GetTick,UART_WaitOnFlagUntilTimeout]
+HAL_UART_Receive call:[HAL_GetTick,UART_WaitOnFlagUntilTimeout,while]
+HAL_UART_Transmit_IT call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UART_Receive_IT call:[IS_LPUART_INSTANCE,UART_Start_Receive_IT,__get_PRIMASK,__set_PRIMASK,return,while] noreturn:[__set_PRIMASK,return,while]
+HAL_UART_Transmit_DMA call:[HAL_DMA_Start_IT,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_UART_Receive_DMA call:[IS_LPUART_INSTANCE,UART_Start_Receive_DMA,__get_PRIMASK,__set_PRIMASK,return,while] noreturn:[__set_PRIMASK,return,while]
+HAL_UART_DMAPause call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UART_DMAResume call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UART_DMAStop call:[HAL_DMA_Abort,HAL_DMA_GetError,UART_EndRxTransfer,UART_EndTxTransfer,__get_PRIMASK,__set_PRIMASK,while] noreturn:[UART_EndRxTransfer,UART_EndTxTransfer,__set_PRIMASK]
+HAL_UART_Abort call:[HAL_DMA_Abort,HAL_DMA_GetError,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UART_AbortTransmit call:[HAL_DMA_Abort,HAL_DMA_GetError,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_UART_AbortReceive call:[HAL_DMA_Abort,HAL_DMA_GetError,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+HAL_UART_Abort_IT call:[HAL_DMA_Abort_IT,HAL_UART_AbortCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UART_AbortCpltCallback,__set_PRIMASK,while]
+HAL_UART_AbortTransmit_IT call:[HAL_DMA_Abort_IT,HAL_UART_AbortTransmitCpltCallback,XferAbortCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UART_AbortTransmitCpltCallback,XferAbortCallback,__set_PRIMASK]
+HAL_UART_AbortReceive_IT call:[HAL_DMA_Abort_IT,HAL_UART_AbortReceiveCpltCallback,XferAbortCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UART_AbortReceiveCpltCallback,XferAbortCallback,__set_PRIMASK,while]
+HAL_UART_IRQHandler call:[HAL_DMA_Abort,HAL_DMA_Abort_IT,HAL_UARTEx_RxEventCallback,HAL_UARTEx_RxFifoFullCallback,HAL_UARTEx_TxFifoEmptyCallback,HAL_UARTEx_WakeupCallback,HAL_UART_ErrorCallback,RxISR,TxISR,UART_EndRxTransfer,UART_EndTransmit_IT,XferAbortCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_DMA_Abort,HAL_UARTEx_RxEventCallback,HAL_UART_ErrorCallback,RxISR,TxISR,XferAbortCallback,__set_PRIMASK]
+HAL_UART_TxCpltCallback
+HAL_UART_TxHalfCpltCallback
+HAL_UART_RxCpltCallback
+HAL_UART_RxHalfCpltCallback
+HAL_UART_ErrorCallback
+HAL_UART_AbortCpltCallback
+HAL_UART_AbortTransmitCpltCallback
+HAL_UART_AbortReceiveCpltCallback
+HAL_UARTEx_RxEventCallback
+HAL_UART_ReceiverTimeout_Config call:[IS_LPUART_INSTANCE]
+HAL_UART_EnableReceiverTimeout call:[IS_LPUART_INSTANCE,while]
+HAL_UART_DisableReceiverTimeout call:[IS_LPUART_INSTANCE,while]
+HAL_MultiProcessor_EnableMuteMode call:[UART_CheckIdleState,__get_PRIMASK,__set_PRIMASK,return,while] noreturn:[__set_PRIMASK,return]
+HAL_MultiProcessor_DisableMuteMode call:[UART_CheckIdleState,__get_PRIMASK,__set_PRIMASK,return,while] noreturn:[__set_PRIMASK,return]
+HAL_MultiProcessor_EnterMuteMode
+HAL_HalfDuplex_EnableTransmitter call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_HalfDuplex_EnableReceiver call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+HAL_LIN_SendBreak call:[while]
+HAL_UART_GetState call:[return]
+HAL_UART_GetError
+UART_SetConfig global:[UARTPrescTable] call:[HAL_RCC_GetPCLK1Freq,HAL_RCC_GetSysClockFreq,IS_LPUART_INSTANCE,__HAL_RCC_GET_LPUART1_SOURCE,__HAL_RCC_GET_LPUART2_SOURCE,__HAL_RCC_GET_USART2_SOURCE,__HAL_RCC_GET_USART3_SOURCE,case,while]
+UART_AdvFeatureConfig
+UART_CheckIdleState call:[HAL_GetTick,UART_WaitOnFlagUntilTimeout,while]
+UART_WaitOnFlagUntilTimeout call:[HAL_GetTick,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+UART_Start_Receive_IT call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+UART_Start_Receive_DMA call:[HAL_DMA_Start_IT,__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+UART_EndTxTransfer call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+UART_EndRxTransfer call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+UART_DMATransmitCplt call:[HAL_UART_TxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UART_TxCpltCallback,__set_PRIMASK,while]
+UART_DMATxHalfCplt call:[HAL_UART_TxHalfCpltCallback] noreturn:[HAL_UART_TxHalfCpltCallback]
+UART_DMAReceiveCplt call:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__set_PRIMASK,while]
+UART_DMARxHalfCplt call:[HAL_UARTEx_RxEventCallback,HAL_UART_RxHalfCpltCallback] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxHalfCpltCallback]
+UART_DMAError call:[HAL_UART_ErrorCallback,UART_EndRxTransfer,UART_EndTxTransfer] noreturn:[HAL_UART_ErrorCallback,UART_EndRxTransfer,UART_EndTxTransfer]
+UART_DMAAbortOnError call:[HAL_UART_ErrorCallback] noreturn:[HAL_UART_ErrorCallback]
+UART_DMATxAbortCallback call:[HAL_UART_AbortCpltCallback] noreturn:[HAL_UART_AbortCpltCallback]
+UART_DMARxAbortCallback call:[HAL_UART_AbortCpltCallback] noreturn:[HAL_UART_AbortCpltCallback]
+UART_DMATxOnlyAbortCallback call:[HAL_UART_AbortTransmitCpltCallback] noreturn:[HAL_UART_AbortTransmitCpltCallback]
+UART_DMARxOnlyAbortCallback call:[HAL_UART_AbortReceiveCpltCallback] noreturn:[HAL_UART_AbortReceiveCpltCallback]
+UART_TxISR_8BIT call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+UART_TxISR_16BIT call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK,while]
+UART_TxISR_8BIT_FIFOEN call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+UART_TxISR_16BIT_FIFOEN call:[__get_PRIMASK,__set_PRIMASK,while] noreturn:[__set_PRIMASK]
+UART_EndTransmit_IT call:[HAL_UART_TxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UART_TxCpltCallback,__set_PRIMASK]
+UART_RxISR_8BIT call:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__set_PRIMASK]
+UART_RxISR_16BIT call:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__set_PRIMASK]
+UART_RxISR_8BIT_FIFOEN call:[HAL_UARTEx_RxEventCallback,HAL_UART_ErrorCallback,HAL_UART_RxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__set_PRIMASK,while]
+UART_RxISR_16BIT_FIFOEN call:[HAL_UARTEx_RxEventCallback,HAL_UART_ErrorCallback,HAL_UART_RxCpltCallback,__get_PRIMASK,__set_PRIMASK,while] noreturn:[HAL_UARTEx_RxEventCallback,HAL_UART_RxCpltCallback,__set_PRIMASK,while]

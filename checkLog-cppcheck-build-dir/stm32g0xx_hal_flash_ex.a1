@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13552511182339210181">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;pOBInit&apos; can be declared as pointer to const" verbose="Parameter &apos;pOBInit&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_flash_ex.c" line="297" column="69" info="Parameter &apos;pOBInit&apos; can be declared as pointer to const"/>
+            <symbol>pOBInit</symbol>
+        </error>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h:74:19" my-argnr="1" my-argname="pOBInit" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" line="423" col="3" value="0"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash_ex.h:74:19" my-argnr="1" my-argname="pOBInit" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.c" line="423" col="3" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_FLASHEx_Erase" lineNumber="154"/>
+    <functiondecl functionName="HAL_FLASHEx_Erase_IT" lineNumber="226"/>
+    <functiondecl functionName="HAL_FLASHEx_OBProgram" lineNumber="297"/>
+    <functiondecl functionName="HAL_FLASHEx_OBGetConfig" lineNumber="421"/>
+    <functiondecl functionName="HAL_FLASHEx_FlashEmptyCheck" lineNumber="488"/>
+    <functiondecl functionName="HAL_FLASHEx_ForceFlashEmpty" lineNumber="502"/>
+    <functiondecl functionName="FLASH_MassErase" lineNumber="568"/>
+    <functiondecl functionName="FLASH_PageErase" lineNumber="588"/>
+    <functiondecl functionName="FLASH_FlushCaches" lineNumber="619"/>
+    <functiondecl functionName="FLASH_OB_WRPConfig" lineNumber="656"/>
+    <functiondecl functionName="FLASH_OB_GetWRP" lineNumber="699"/>
+    <functiondecl functionName="FLASH_OB_OptrConfig" lineNumber="762"/>
+    <functiondecl functionName="FLASH_OB_GetRDP" lineNumber="785"/>
+    <functiondecl functionName="FLASH_OB_GetUser" lineNumber="821"/>
+    <functiondecl functionName="HAL_FLASHEx_Erase" lineNumber="154"/>
+    <functiondecl functionName="HAL_FLASHEx_Erase_IT" lineNumber="226"/>
+    <functiondecl functionName="HAL_FLASHEx_OBProgram" lineNumber="297"/>
+    <functiondecl functionName="HAL_FLASHEx_OBGetConfig" lineNumber="421"/>
+    <functiondecl functionName="HAL_FLASHEx_FlashEmptyCheck" lineNumber="488"/>
+    <functiondecl functionName="HAL_FLASHEx_ForceFlashEmpty" lineNumber="502"/>
+    <functiondecl functionName="FLASH_MassErase" lineNumber="568"/>
+    <functiondecl functionName="FLASH_PageErase" lineNumber="588"/>
+    <functiondecl functionName="FLASH_FlushCaches" lineNumber="619"/>
+    <functiondecl functionName="FLASH_OB_WRPConfig" lineNumber="656"/>
+    <functiondecl functionName="FLASH_OB_GetWRP" lineNumber="699"/>
+    <functiondecl functionName="FLASH_OB_OptrConfig" lineNumber="762"/>
+    <functiondecl functionName="FLASH_OB_GetRDP" lineNumber="785"/>
+    <functiondecl functionName="FLASH_OB_GetUser" lineNumber="821"/>
+    <functioncall functionName="ACR"/>
+    <functioncall functionName="CR"/>
+    <functioncall functionName="FLASH_ACR_ICEN"/>
+    <functioncall functionName="FLASH_ACR_ICRST"/>
+    <functioncall functionName="FLASH_CR_ERRIE"/>
+    <functioncall functionName="FLASH_CR_MER1"/>
+    <functioncall functionName="FLASH_CR_OPTSTRT"/>
+    <functioncall functionName="FLASH_CR_PER"/>
+    <functioncall functionName="FLASH_MassErase"/>
+    <functioncall functionName="FLASH_OB_GetRDP"/>
+    <functioncall functionName="FLASH_OB_GetUser"/>
+    <functioncall functionName="FLASH_OB_GetWRP"/>
+    <functioncall functionName="FLASH_OB_OptrConfig"/>
+    <functioncall functionName="FLASH_OB_WRPConfig"/>
+    <functioncall functionName="FLASH_OPTR_RDP"/>
+    <functioncall functionName="FLASH_OPTR_nBOOT0"/>
+    <functioncall functionName="FLASH_PageErase"/>
+    <functioncall functionName="FLASH_WRP1AR_WRP1A_END"/>
+    <functioncall functionName="FLASH_WRP1AR_WRP1A_STRT"/>
+    <functioncall functionName="FLASH_WRP1BR_WRP1B_END"/>
+    <functioncall functionName="FLASH_WRP1BR_WRP1B_STRT"/>
+    <functioncall functionName="FLASH_WaitForLastOperation"/>
+    <functioncall functionName="HAL_BUSY"/>
+    <functioncall functionName="HAL_LOCKED"/>
+    <functioncall functionName="HAL_UNLOCKED"/>
+    <functioncall functionName="OPTR"/>
+    <functioncall functionName="WRP1AR"/>
+    <functioncall functionName="WRP1BR"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>checkLog-cppcheck-build-dir</builddir>
+    <analyze-all-vs-configs>false</analyze-all-vs-configs>
+    <check-headers>true</check-headers>
+    <check-unused-templates>true</check-unused-templates>
+    <max-ctu-depth>2</max-ctu-depth>
+    <max-template-recursion>100</max-template-recursion>
+    <includedir>
+        <dir name="Core/Inc/"/>
+        <dir name="Drivers/STM32G0xx_HAL_Driver/Inc/"/>
+        <dir name="Drivers/CMSIS/Include/"/>
+        <dir name="Drivers/CMSIS/Device/ST/STM32G0xx/Include/"/>
+    </includedir>
+    <paths>
+        <dir name="."/>
+    </paths>
+</project>

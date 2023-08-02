@@ -1,0 +1,5 @@
+HAL_DMAEx_ConfigMuxSync call:[while]
+HAL_DMAEx_ConfigMuxRequestGenerator call:[while]
+HAL_DMAEx_EnableMuxRequestGenerator
+HAL_DMAEx_DisableMuxRequestGenerator
+HAL_DMAEx_MUX_IRQHandler call:[XferErrorCallback] noreturn:[XferErrorCallback]

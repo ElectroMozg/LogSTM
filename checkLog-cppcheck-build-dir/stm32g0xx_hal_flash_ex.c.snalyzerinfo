@@ -1,0 +1,14 @@
+HAL_FLASHEx_Erase global:[pFlash] call:[FLASH_MassErase,FLASH_PageErase,FLASH_WaitForLastOperation,while] noreturn:[FLASH_WaitForLastOperation]
+HAL_FLASHEx_Erase_IT global:[pFlash] call:[FLASH_MassErase,FLASH_PageErase,FLASH_WaitForLastOperation,while] noreturn:[FLASH_MassErase,FLASH_PageErase,while]
+HAL_FLASHEx_OBProgram global:[pFlash] call:[FLASH_OB_GetRDP,FLASH_OB_GetUser,FLASH_OB_OptrConfig,FLASH_OB_WRPConfig,FLASH_WaitForLastOperation,while] noreturn:[FLASH_OB_OptrConfig,FLASH_OB_WRPConfig]
+HAL_FLASHEx_OBGetConfig call:[FLASH_OB_GetRDP,FLASH_OB_GetUser,FLASH_OB_GetWRP]
+HAL_FLASHEx_FlashEmptyCheck call:[return] noreturn:[return]
+HAL_FLASHEx_ForceFlashEmpty
+FLASH_MassErase
+FLASH_PageErase
+FLASH_FlushCaches call:[while]
+FLASH_OB_WRPConfig
+FLASH_OB_GetWRP
+FLASH_OB_OptrConfig
+FLASH_OB_GetRDP call:[return] noreturn:[return]
+FLASH_OB_GetUser

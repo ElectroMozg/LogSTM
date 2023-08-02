@@ -1,0 +1,1 @@
+MX_TIM1_Init call:[LL_APB2_GRP1_EnableClock,LL_TIM_DisableARRPreload,LL_TIM_DisableMasterSlaveMode,LL_TIM_Init,LL_TIM_SetClockSource,LL_TIM_SetTriggerOutput,NVIC_EnableIRQ,NVIC_EncodePriority,NVIC_GetPriorityGrouping,NVIC_SetPriority] noreturn:[LL_TIM_DisableMasterSlaveMode]

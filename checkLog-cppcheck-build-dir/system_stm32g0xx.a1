@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5147854886259608310">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SystemInit" lineNumber="185"/>
+    <functiondecl functionName="SystemCoreClockUpdate" lineNumber="233"/>
+    <functioncall functionName="RCC_CFGR_SWS_0"/>
+    <functioncall functionName="RCC_CR_HSIDIV"/>
+  </FileInfo>
+</analyzerinfo>

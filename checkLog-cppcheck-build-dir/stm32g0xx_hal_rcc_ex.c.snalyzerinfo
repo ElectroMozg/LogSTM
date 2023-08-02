@@ -1,0 +1,5 @@
+HAL_RCCEx_PeriphCLKConfig call:[HAL_GetTick,__HAL_RCC_USB_CONFIG,while]
+HAL_RCCEx_GetPeriphCLKConfig
+HAL_RCCEx_GetPeriphCLKFreq call:[HAL_RCC_GetPCLK1Freq,HAL_RCC_GetSysClockFreq,return] noreturn:[HAL_RCC_GetPCLK1Freq,HAL_RCC_GetSysClockFreq,return]
+HAL_RCCEx_EnableLSCO call:[HAL_GPIO_Init,HAL_PWR_DisableBkUpAccess,HAL_PWR_EnableBkUpAccess,while] noreturn:[HAL_PWR_DisableBkUpAccess]
+HAL_RCCEx_DisableLSCO call:[HAL_PWR_DisableBkUpAccess,HAL_PWR_EnableBkUpAccess,while] noreturn:[HAL_PWR_DisableBkUpAccess]

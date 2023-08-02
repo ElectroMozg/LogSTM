@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4806646431654690379">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;pExtiConfig&apos; can be declared as pointer to const" verbose="Parameter &apos;pExtiConfig&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="143" column="89" info="Parameter &apos;pExtiConfig&apos; can be declared as pointer to const"/>
+            <symbol>pExtiConfig</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;hexti&apos; can be declared as pointer to const" verbose="Parameter &apos;hexti&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="265" column="62" info="Parameter &apos;hexti&apos; can be declared as pointer to const"/>
+            <symbol>hexti</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;hexti&apos; can be declared as pointer to const" verbose="Parameter &apos;hexti&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="359" column="64" info="Parameter &apos;hexti&apos; can be declared as pointer to const"/>
+            <symbol>hexti</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;hexti&apos; can be declared as pointer to const" verbose="Parameter &apos;hexti&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="555" column="50" info="Parameter &apos;hexti&apos; can be declared as pointer to const"/>
+            <symbol>hexti</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;hexti&apos; can be declared as pointer to const" verbose="Parameter &apos;hexti&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="599" column="48" info="Parameter &apos;hexti&apos; can be declared as pointer to const"/>
+            <symbol>hexti</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;hexti&apos; can be declared as pointer to const" verbose="Parameter &apos;hexti&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_exti.c" line="635" column="47" info="Parameter &apos;hexti&apos; can be declared as pointer to const"/>
+            <symbol>hexti</symbol>
+        </error>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:361:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="509" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:362:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="569" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:363:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="611" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:364:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="646" col="14" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:361:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="509" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:362:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="569" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:363:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="611" col="14" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_exti.h:364:19" my-argnr="1" my-argname="hexti" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_exti.c" line="646" col="14" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_EXTI_SetConfigLine" lineNumber="143"/>
+    <functiondecl functionName="HAL_EXTI_GetConfigLine" lineNumber="265"/>
+    <functiondecl functionName="HAL_EXTI_ClearConfigLine" lineNumber="359"/>
+    <functiondecl functionName="HAL_EXTI_RegisterCallback" lineNumber="425"/>
+    <functiondecl functionName="HAL_EXTI_GetHandle" lineNumber="460"/>
+    <functiondecl functionName="HAL_EXTI_IRQHandler" lineNumber="501"/>
+    <functiondecl functionName="HAL_EXTI_GetPending" lineNumber="555"/>
+    <functiondecl functionName="HAL_EXTI_ClearPending" lineNumber="599"/>
+    <functiondecl functionName="HAL_EXTI_GenerateSWI" lineNumber="635"/>
+    <functiondecl functionName="HAL_EXTI_SetConfigLine" lineNumber="143"/>
+    <functiondecl functionName="HAL_EXTI_GetConfigLine" lineNumber="265"/>
+    <functiondecl functionName="HAL_EXTI_ClearConfigLine" lineNumber="359"/>
+    <functiondecl functionName="HAL_EXTI_RegisterCallback" lineNumber="425"/>
+    <functiondecl functionName="HAL_EXTI_GetHandle" lineNumber="460"/>
+    <functiondecl functionName="HAL_EXTI_IRQHandler" lineNumber="501"/>
+    <functiondecl functionName="HAL_EXTI_GetPending" lineNumber="555"/>
+    <functiondecl functionName="HAL_EXTI_ClearPending" lineNumber="599"/>
+    <functiondecl functionName="HAL_EXTI_GenerateSWI" lineNumber="635"/>
+    <functioncall functionName="FallingCallback"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="RisingCallback"/>
+  </FileInfo>
+</analyzerinfo>

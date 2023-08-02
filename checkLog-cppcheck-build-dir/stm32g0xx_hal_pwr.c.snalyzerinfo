@@ -1,0 +1,12 @@
+HAL_PWR_DeInit
+HAL_PWR_EnableBkUpAccess
+HAL_PWR_DisableBkUpAccess
+HAL_PWR_EnableWakeUpPin
+HAL_PWR_DisableWakeUpPin
+HAL_PWR_EnterSLEEPMode call:[HAL_PWREx_DisableLowPowerRunMode,HAL_PWREx_EnableLowPowerRunMode,__SEV,__WFE,__WFI] noreturn:[HAL_PWREx_EnableLowPowerRunMode,__WFE,__WFI]
+HAL_PWR_EnterSTOPMode call:[__SEV,__WFE,__WFI] noreturn:[__WFE,__WFI]
+HAL_PWR_EnterSTANDBYMode call:[__WFI] noreturn:[__WFI]
+HAL_PWR_EnableSleepOnExit
+HAL_PWR_DisableSleepOnExit
+HAL_PWR_EnableSEVOnPend
+HAL_PWR_DisableSEVOnPend

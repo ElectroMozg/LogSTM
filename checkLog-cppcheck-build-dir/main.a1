@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="10814097347666005493">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3086:19" call-funcname="HAL_RCC_OscConfig" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="128" col="24" call-argexpr="&amp;RCC_OscInitStruct" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3087:19" call-funcname="HAL_RCC_ClockConfig" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="141" col="26" call-argexpr="&amp;RCC_ClkInitStruct" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3087:19" call-funcname="HAL_RCC_ClockConfig" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="141" col="26" call-argexpr="0x00000000UL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1606:19" call-funcname="HAL_UART_Init" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="173" col="20" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" call-funcname="HAL_UARTEx_SetTxFifoThreshold" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="177" col="36" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" call-funcname="HAL_UARTEx_SetTxFifoThreshold" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="177" col="36" call-argexpr="0x00000000U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" call-funcname="HAL_UARTEx_SetRxFifoThreshold" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="181" col="36" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" call-funcname="HAL_UARTEx_SetRxFifoThreshold" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="181" col="36" call-argexpr="0x00000000U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" call-funcname="HAL_UARTEx_DisableFifoMode" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="185" col="33" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:334:19" call-funcname="HAL_GPIO_WritePin" call-argnr="3" file="D:/Study/LogSTM/Core/Src/main.c" line="212" col="20" call-argexpr="GPIO_PIN_RESET" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:320:19" call-funcname="HAL_GPIO_Init" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="219" col="16" call-argexpr="&amp;GPIO_InitStruct" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3086:19" call-funcname="HAL_RCC_OscConfig" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="128" col="24" call-argexpr="&amp;RCC_OscInitStruct" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3087:19" call-funcname="HAL_RCC_ClockConfig" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="141" col="26" call-argexpr="&amp;RCC_ClkInitStruct" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_rcc.h:3087:19" call-funcname="HAL_RCC_ClockConfig" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="141" col="26" call-argexpr="0x00000000UL" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1606:19" call-funcname="HAL_UART_Init" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="173" col="20" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" call-funcname="HAL_UARTEx_SetTxFifoThreshold" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="177" col="36" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" call-funcname="HAL_UARTEx_SetTxFifoThreshold" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="177" col="36" call-argexpr="0x00000000U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" call-funcname="HAL_UARTEx_SetRxFifoThreshold" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="181" col="36" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" call-funcname="HAL_UARTEx_SetRxFifoThreshold" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="181" col="36" call-argexpr="0x00000000U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" call-funcname="HAL_UARTEx_DisableFifoMode" call-argnr="1" file="D:/Study/LogSTM/Core/Src/main.c" line="185" col="33" call-argexpr="&amp;huart2" call-argvaluetype="7" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:334:19" call-funcname="HAL_GPIO_WritePin" call-argnr="3" file="D:/Study/LogSTM/Core/Src/main.c" line="212" col="20" call-argexpr="GPIO_PIN_RESET" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_gpio.h:320:19" call-funcname="HAL_GPIO_Init" call-argnr="2" file="D:/Study/LogSTM/Core/Src/main.c" line="219" col="16" call-argexpr="&amp;GPIO_InitStruct" call-argvaluetype="7" call-argvalue="0"/>  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="main" lineNumber="66"/>
+    <functiondecl functionName="SystemClock_Config" lineNumber="111"/>
+    <functiondecl functionName="MX_USART2_UART_Init" lineNumber="152"/>
+    <functiondecl functionName="MX_GPIO_Init" lineNumber="200"/>
+    <functiondecl functionName="Error_Handler" lineNumber="233"/>
+    <functiondecl functionName="main" lineNumber="66"/>
+    <functiondecl functionName="SystemClock_Config" lineNumber="111"/>
+    <functiondecl functionName="MX_USART2_UART_Init" lineNumber="152"/>
+    <functiondecl functionName="MX_GPIO_Init" lineNumber="200"/>
+    <functiondecl functionName="Error_Handler" lineNumber="233"/>
+    <functioncall functionName="Error_Handler"/>
+    <functioncall functionName="GPIOA"/>
+    <functioncall functionName="GPIO_PIN_RESET"/>
+    <functioncall functionName="HAL_Delay"/>
+    <functioncall functionName="HAL_GPIO_Init"/>
+    <functioncall functionName="HAL_GPIO_TogglePin"/>
+    <functioncall functionName="HAL_GPIO_WritePin"/>
+    <functioncall functionName="HAL_Init"/>
+    <functioncall functionName="HAL_PWREx_ControlVoltageScaling"/>
+    <functioncall functionName="HAL_RCC_ClockConfig"/>
+    <functioncall functionName="HAL_RCC_OscConfig"/>
+    <functioncall functionName="HAL_UARTEx_DisableFifoMode"/>
+    <functioncall functionName="HAL_UARTEx_SetRxFifoThreshold"/>
+    <functioncall functionName="HAL_UARTEx_SetTxFifoThreshold"/>
+    <functioncall functionName="HAL_UART_Init"/>
+    <functioncall functionName="IOPENR"/>
+    <functioncall functionName="MX_GPIO_Init"/>
+    <functioncall functionName="MX_USART2_UART_Init"/>
+    <functioncall functionName="PWR_CR1_VOS_0"/>
+    <functioncall functionName="RCC_CR_HSION"/>
+    <functioncall functionName="RCC_IOPENR_GPIOAEN"/>
+    <functioncall functionName="RCC_IOPENR_GPIOCEN"/>
+    <functioncall functionName="RCC_IOPENR_GPIOFEN"/>
+    <functioncall functionName="SystemClock_Config"/>
+    <functioncall functionName="USART2"/>
+    <functioncall functionName="USART_CR1_M1"/>
+    <functioncall functionName="USART_CR1_RE"/>
+    <functioncall functionName="__disable_irq"/>
+  </FileInfo>
+</analyzerinfo>

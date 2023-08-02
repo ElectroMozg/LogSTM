@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15029890052822451382">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;prevTickFreq&apos; can be reduced." verbose="The scope of the variable &apos;prevTickFreq&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal.c" line="340" column="23"/>
+            <symbol>prevTickFreq</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:736:19" call-funcname="HAL_InitTick" call-argnr="1" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" line="161" col="19" call-argexpr="0U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h:250:6" call-funcname="HAL_NVIC_SetPriority" call-argnr="3" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" line="253" col="29" call-argexpr="0U" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:736:19" call-funcname="HAL_InitTick" call-argnr="1" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" line="161" col="19" call-argexpr="0U" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_cortex.h:250:6" call-funcname="HAL_NVIC_SetPriority" call-argnr="3" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.c" line="253" col="29" call-argexpr="0U" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_Init" lineNumber="143"/>
+    <functiondecl functionName="HAL_DeInit" lineNumber="180"/>
+    <functiondecl functionName="HAL_MspInit" lineNumber="206"/>
+    <functiondecl functionName="HAL_MspDeInit" lineNumber="217"/>
+    <functiondecl functionName="HAL_InitTick" lineNumber="240"/>
+    <functiondecl functionName="HAL_IncTick" lineNumber="308"/>
+    <functiondecl functionName="HAL_GetTick" lineNumber="319"/>
+    <functiondecl functionName="HAL_GetTickPrio" lineNumber="328"/>
+    <functiondecl functionName="HAL_SetTickFreq" lineNumber="337"/>
+    <functiondecl functionName="HAL_GetTickFreq" lineNumber="367"/>
+    <functiondecl functionName="HAL_Delay" lineNumber="383"/>
+    <functiondecl functionName="HAL_SuspendTick" lineNumber="409"/>
+    <functiondecl functionName="HAL_ResumeTick" lineNumber="425"/>
+    <functiondecl functionName="HAL_GetHalVersion" lineNumber="435"/>
+    <functiondecl functionName="HAL_GetREVID" lineNumber="444"/>
+    <functiondecl functionName="HAL_GetDEVID" lineNumber="453"/>
+    <functiondecl functionName="HAL_GetUIDw0" lineNumber="462"/>
+    <functiondecl functionName="HAL_GetUIDw1" lineNumber="471"/>
+    <functiondecl functionName="HAL_GetUIDw2" lineNumber="480"/>
+    <functiondecl functionName="HAL_DBGMCU_EnableDBGStopMode" lineNumber="508"/>
+    <functiondecl functionName="HAL_DBGMCU_DisableDBGStopMode" lineNumber="517"/>
+    <functiondecl functionName="HAL_DBGMCU_EnableDBGStandbyMode" lineNumber="526"/>
+    <functiondecl functionName="HAL_DBGMCU_DisableDBGStandbyMode" lineNumber="535"/>
+    <functiondecl functionName="HAL_SYSCFG_EnableIOAnalogSwitchBooster" lineNumber="651"/>
+    <functiondecl functionName="HAL_SYSCFG_DisableIOAnalogSwitchBooster" lineNumber="660"/>
+    <functiondecl functionName="HAL_SYSCFG_EnableRemap" lineNumber="673"/>
+    <functiondecl functionName="HAL_SYSCFG_DisableRemap" lineNumber="688"/>
+    <functiondecl functionName="HAL_Init" lineNumber="143"/>
+    <functiondecl functionName="HAL_DeInit" lineNumber="180"/>
+    <functiondecl functionName="HAL_MspInit" lineNumber="206"/>
+    <functiondecl functionName="HAL_MspDeInit" lineNumber="217"/>
+    <functiondecl functionName="HAL_InitTick" lineNumber="240"/>
+    <functiondecl functionName="HAL_IncTick" lineNumber="308"/>
+    <functiondecl functionName="HAL_GetTick" lineNumber="319"/>
+    <functiondecl functionName="HAL_GetTickPrio" lineNumber="328"/>
+    <functiondecl functionName="HAL_SetTickFreq" lineNumber="337"/>
+    <functiondecl functionName="HAL_GetTickFreq" lineNumber="367"/>
+    <functiondecl functionName="HAL_Delay" lineNumber="383"/>
+    <functiondecl functionName="HAL_SuspendTick" lineNumber="409"/>
+    <functiondecl functionName="HAL_ResumeTick" lineNumber="425"/>
+    <functiondecl functionName="HAL_GetHalVersion" lineNumber="435"/>
+    <functiondecl functionName="HAL_GetREVID" lineNumber="444"/>
+    <functiondecl functionName="HAL_GetDEVID" lineNumber="453"/>
+    <functiondecl functionName="HAL_GetUIDw0" lineNumber="462"/>
+    <functiondecl functionName="HAL_GetUIDw1" lineNumber="471"/>
+    <functiondecl functionName="HAL_GetUIDw2" lineNumber="480"/>
+    <functiondecl functionName="HAL_DBGMCU_EnableDBGStopMode" lineNumber="508"/>
+    <functiondecl functionName="HAL_DBGMCU_DisableDBGStopMode" lineNumber="517"/>
+    <functiondecl functionName="HAL_DBGMCU_EnableDBGStandbyMode" lineNumber="526"/>
+    <functiondecl functionName="HAL_DBGMCU_DisableDBGStandbyMode" lineNumber="535"/>
+    <functiondecl functionName="HAL_SYSCFG_EnableIOAnalogSwitchBooster" lineNumber="651"/>
+    <functiondecl functionName="HAL_SYSCFG_DisableIOAnalogSwitchBooster" lineNumber="660"/>
+    <functiondecl functionName="HAL_SYSCFG_EnableRemap" lineNumber="673"/>
+    <functiondecl functionName="HAL_SYSCFG_DisableRemap" lineNumber="688"/>
+    <functioncall functionName="APBRSTR1"/>
+    <functioncall functionName="CFGR1"/>
+    <functioncall functionName="CR"/>
+    <functioncall functionName="CTRL"/>
+    <functioncall functionName="DBG_CR_DBG_STANDBY"/>
+    <functioncall functionName="DBG_CR_DBG_STOP"/>
+    <functioncall functionName="FLASH_ACR_PRFTEN"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_GetTick"/>
+    <functioncall functionName="HAL_InitTick"/>
+    <functioncall functionName="HAL_MspDeInit"/>
+    <functioncall functionName="HAL_MspInit"/>
+    <functioncall functionName="HAL_NVIC_SetPriority"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="HAL_SYSTICK_Config"/>
+    <functioncall functionName="HAL_TICK_FREQ_DEFAULT"/>
+    <functioncall functionName="SYSCFG_CFGR1_BOOSTEN"/>
+    <functioncall functionName="SysTick_CTRL_TICKINT_Msk"/>
+    <functioncall functionName="SysTick_IRQn"/>
+    <functioncall functionName="UID_BASE"/>
+  </FileInfo>
+</analyzerinfo>

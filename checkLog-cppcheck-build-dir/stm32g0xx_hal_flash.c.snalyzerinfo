@@ -1,0 +1,14 @@
+HAL_FLASH_Program global:[pFlash] call:[FLASH_Program_DoubleWord,FLASH_Program_Fast,FLASH_WaitForLastOperation,while] noreturn:[FLASH_Program_DoubleWord,FLASH_Program_Fast]
+HAL_FLASH_Program_IT global:[pFlash] call:[FLASH_Program_DoubleWord,FLASH_Program_Fast,FLASH_WaitForLastOperation,while] noreturn:[FLASH_Program_DoubleWord,FLASH_Program_Fast,while]
+HAL_FLASH_IRQHandler global:[pFlash] call:[FLASH_PageErase,HAL_FLASH_EndOfOperationCallback,HAL_FLASH_OperationErrorCallback,while] noreturn:[FLASH_PageErase,HAL_FLASH_EndOfOperationCallback,HAL_FLASH_OperationErrorCallback,while]
+HAL_FLASH_EndOfOperationCallback
+HAL_FLASH_OperationErrorCallback
+HAL_FLASH_Unlock
+HAL_FLASH_Lock
+HAL_FLASH_OB_Unlock
+HAL_FLASH_OB_Lock
+HAL_FLASH_OB_Launch
+HAL_FLASH_GetError global:[pFlash]
+FLASH_WaitForLastOperation global:[pFlash] call:[HAL_GetTick]
+FLASH_Program_DoubleWord call:[__ISB]
+FLASH_Program_Fast call:[__disable_irq,__get_PRIMASK,__set_PRIMASK] noreturn:[__set_PRIMASK]

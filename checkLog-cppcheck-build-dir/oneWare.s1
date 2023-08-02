@@ -1,0 +1,23 @@
+ow_init global:[current,depth,send_data,state] call:[HAL_ADCEx_Calibration_Start,LL_GPIO_SetOutputPin,LL_TIM_EnableIT_UPDATE,gDWT_Delay_Init]
+ow_process_exe global:[state] call:[ow_cmd_convert_t_process,ow_cmd_read_mem_process,ow_cmd_skip_rom_process,ow_idle_process,ow_waiting_for_reset_process,ow_wake_up_process]
+ow_idle_process call:[LL_EXTI_IsEnabledIT_0_31,NVIC_EnableIRQ] noreturn:[NVIC_EnableIRQ]
+ow_waiting_for_reset_process call:[LL_GPIO_IsInputPinSet,LL_TIM_DisableCounter,LL_TIM_EnableCounter] noreturn:[LL_TIM_DisableCounter,LL_TIM_EnableCounter]
+ow_wake_up_process global:[state] call:[LL_TIM_DisableCounter,NVIC_DisableIRQ,NVIC_EnableIRQ,gDWT_Delay_us,readByte,wait4high,wire_down,wire_up]
+readByte call:[gDWT_Delay_us,mirror_byte,wait4high,wait4low,wire_read] noreturn:[mirror_byte,wait4high]
+ow_cmd_skip_rom_process global:[state] call:[readByte]
+ow_cmd_convert_t_process global:[current,depth,send_data,state] call:[convert_temp,current_calc,current_to_temp,depth_calc,depth_to_temp] noreturn:[current_to_temp,depth_to_temp]
+convert_temp
+ow_cmd_read_mem_process global:[send_data,state] call:[sendByte] noreturn:[sendByte]
+ow_adc_handler_process global:[channel_0_buffer,current] call:[HAL_ADCEx_InjectedGetValue,HAL_ADCEx_InjectedPollForConversion,HAL_ADCEx_InjectedStart,current_calc]
+sendByte call:[gDWT_Delay_us,wait4high,wait4low,wire_down,wire_up] noreturn:[wait4high,wire_down]
+wait4high call:[LL_GPIO_IsInputPinSet]
+wait4low call:[LL_GPIO_IsInputPinSet]
+wire_up call:[LL_GPIO_SetOutputPin] noreturn:[LL_GPIO_SetOutputPin]
+wire_down call:[LL_GPIO_ResetOutputPin] noreturn:[LL_GPIO_ResetOutputPin]
+wire_read call:[LL_GPIO_IsInputPinSet] noreturn:[LL_GPIO_IsInputPinSet]
+mirror_byte
+current_calc call:[HAL_ADCEx_InjectedGetValue,HAL_ADCEx_InjectedPollForConversion,HAL_ADCEx_InjectedStart,round]
+depth_calc call:[HAL_ADCEx_InjectedGetValue,HAL_ADCEx_InjectedPollForConversion,HAL_ADCEx_InjectedStart]
+current_to_temp
+depth_to_temp
+qsortRecursive call:[qsortRecursive,while] noreturn:[qsortRecursive]

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17834307033599116597">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;wait_loop_index&apos; can be reduced." verbose="The scope of the variable &apos;wait_loop_index&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_pwr_ex.c" line="764" column="12"/>
+            <symbol>wait_loop_index</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_PWREx_EnableBatteryCharging" lineNumber="131"/>
+    <functiondecl functionName="HAL_PWREx_DisableBatteryCharging" lineNumber="146"/>
+    <functiondecl functionName="HAL_PWREx_EnableInternalWakeUpLine" lineNumber="381"/>
+    <functiondecl functionName="HAL_PWREx_DisableInternalWakeUpLine" lineNumber="390"/>
+    <functiondecl functionName="HAL_PWREx_EnableGPIOPullUp" lineNumber="414"/>
+    <functiondecl functionName="HAL_PWREx_DisableGPIOPullUp" lineNumber="476"/>
+    <functiondecl functionName="HAL_PWREx_EnableGPIOPullDown" lineNumber="538"/>
+    <functiondecl functionName="HAL_PWREx_DisableGPIOPullDown" lineNumber="600"/>
+    <functiondecl functionName="HAL_PWREx_EnablePullUpPullDownConfig" lineNumber="653"/>
+    <functiondecl functionName="HAL_PWREx_DisablePullUpPullDownConfig" lineNumber="664"/>
+    <functiondecl functionName="HAL_PWREx_EnableFlashPowerDown" lineNumber="704"/>
+    <functiondecl functionName="HAL_PWREx_DisableFlashPowerDown" lineNumber="722"/>
+    <functiondecl functionName="HAL_PWREx_GetVoltageRange" lineNumber="736"/>
+    <functiondecl functionName="HAL_PWREx_ControlVoltageScaling" lineNumber="762"/>
+    <functiondecl functionName="HAL_PWREx_EnableLowPowerRunMode" lineNumber="803"/>
+    <functiondecl functionName="HAL_PWREx_DisableLowPowerRunMode" lineNumber="818"/>
+    <functiondecl functionName="HAL_PWREx_EnableBatteryCharging" lineNumber="131"/>
+    <functiondecl functionName="HAL_PWREx_DisableBatteryCharging" lineNumber="146"/>
+    <functiondecl functionName="HAL_PWREx_EnableInternalWakeUpLine" lineNumber="381"/>
+    <functiondecl functionName="HAL_PWREx_DisableInternalWakeUpLine" lineNumber="390"/>
+    <functiondecl functionName="HAL_PWREx_EnableGPIOPullUp" lineNumber="414"/>
+    <functiondecl functionName="HAL_PWREx_DisableGPIOPullUp" lineNumber="476"/>
+    <functiondecl functionName="HAL_PWREx_EnableGPIOPullDown" lineNumber="538"/>
+    <functiondecl functionName="HAL_PWREx_DisableGPIOPullDown" lineNumber="600"/>
+    <functiondecl functionName="HAL_PWREx_EnablePullUpPullDownConfig" lineNumber="653"/>
+    <functiondecl functionName="HAL_PWREx_DisablePullUpPullDownConfig" lineNumber="664"/>
+    <functiondecl functionName="HAL_PWREx_EnableFlashPowerDown" lineNumber="704"/>
+    <functiondecl functionName="HAL_PWREx_DisableFlashPowerDown" lineNumber="722"/>
+    <functiondecl functionName="HAL_PWREx_GetVoltageRange" lineNumber="736"/>
+    <functiondecl functionName="HAL_PWREx_ControlVoltageScaling" lineNumber="762"/>
+    <functiondecl functionName="HAL_PWREx_EnableLowPowerRunMode" lineNumber="803"/>
+    <functiondecl functionName="HAL_PWREx_DisableLowPowerRunMode" lineNumber="818"/>
+    <functioncall functionName="CR1"/>
+    <functioncall functionName="CR3"/>
+    <functioncall functionName="CR4"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="HAL_TIMEOUT"/>
+    <functioncall functionName="PWR_CR1_LPR"/>
+    <functioncall functionName="PWR_CR1_VOS"/>
+    <functioncall functionName="PWR_CR3_APC"/>
+    <functioncall functionName="PWR_CR3_EIWUL"/>
+    <functioncall functionName="PWR_CR4_VBE"/>
+    <functioncall functionName="PWR_SR2_REGLPF"/>
+    <functioncall functionName="PWR_SR2_VOSF"/>
+  </FileInfo>
+</analyzerinfo>

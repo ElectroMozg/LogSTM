@@ -1,0 +1,16 @@
+HAL_PWREx_EnableBatteryCharging
+HAL_PWREx_DisableBatteryCharging
+HAL_PWREx_EnableInternalWakeUpLine
+HAL_PWREx_DisableInternalWakeUpLine
+HAL_PWREx_EnableGPIOPullUp call:[case]
+HAL_PWREx_DisableGPIOPullUp call:[case]
+HAL_PWREx_EnableGPIOPullDown call:[case]
+HAL_PWREx_DisableGPIOPullDown call:[case]
+HAL_PWREx_EnablePullUpPullDownConfig
+HAL_PWREx_DisablePullUpPullDownConfig
+HAL_PWREx_EnableFlashPowerDown
+HAL_PWREx_DisableFlashPowerDown
+HAL_PWREx_GetVoltageRange call:[return] noreturn:[return]
+HAL_PWREx_ControlVoltageScaling
+HAL_PWREx_EnableLowPowerRunMode
+HAL_PWREx_DisableLowPowerRunMode

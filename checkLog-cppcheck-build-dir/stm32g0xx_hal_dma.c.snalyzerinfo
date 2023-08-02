@@ -1,0 +1,15 @@
+HAL_DMA_Init call:[DMA_CalcDMAMUXChannelBaseAndMask,DMA_CalcDMAMUXRequestGenBaseAndMask,while]
+HAL_DMA_DeInit call:[DMA_CalcDMAMUXChannelBaseAndMask,DMA_CalcDMAMUXRequestGenBaseAndMask,while]
+HAL_DMA_Start call:[DMA_SetConfig,while]
+HAL_DMA_Start_IT call:[DMA_SetConfig,while]
+HAL_DMA_Abort call:[while] noreturn:[while]
+HAL_DMA_Abort_IT call:[XferAbortCallback,while] noreturn:[XferAbortCallback]
+HAL_DMA_PollForTransfer call:[HAL_GetTick,while]
+HAL_DMA_IRQHandler call:[XferCpltCallback,XferErrorCallback,XferHalfCpltCallback,while] noreturn:[XferCpltCallback,XferErrorCallback,XferHalfCpltCallback]
+HAL_DMA_RegisterCallback call:[while]
+HAL_DMA_UnRegisterCallback call:[while]
+HAL_DMA_GetState
+HAL_DMA_GetError
+DMA_SetConfig
+DMA_CalcDMAMUXChannelBaseAndMask
+DMA_CalcDMAMUXRequestGenBaseAndMask

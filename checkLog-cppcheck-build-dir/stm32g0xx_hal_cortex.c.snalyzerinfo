@@ -1,0 +1,12 @@
+HAL_NVIC_SetPriority call:[NVIC_SetPriority] noreturn:[NVIC_SetPriority]
+HAL_NVIC_EnableIRQ call:[NVIC_EnableIRQ] noreturn:[NVIC_EnableIRQ]
+HAL_NVIC_DisableIRQ call:[NVIC_DisableIRQ] noreturn:[NVIC_DisableIRQ]
+HAL_NVIC_SystemReset call:[NVIC_SystemReset] noreturn:[NVIC_SystemReset]
+HAL_SYSTICK_Config call:[SysTick_Config] noreturn:[SysTick_Config]
+HAL_NVIC_GetPriority call:[NVIC_GetPriority] noreturn:[NVIC_GetPriority]
+HAL_NVIC_SetPendingIRQ call:[NVIC_SetPendingIRQ] noreturn:[NVIC_SetPendingIRQ]
+HAL_NVIC_GetPendingIRQ call:[NVIC_GetPendingIRQ] noreturn:[NVIC_GetPendingIRQ]
+HAL_NVIC_ClearPendingIRQ call:[NVIC_ClearPendingIRQ] noreturn:[NVIC_ClearPendingIRQ]
+HAL_SYSTICK_CLKSourceConfig
+HAL_SYSTICK_IRQHandler call:[HAL_SYSTICK_Callback] noreturn:[HAL_SYSTICK_Callback]
+HAL_SYSTICK_Callback

@@ -1,0 +1,12 @@
+NMI_Handler
+HardFault_Handler
+MemManage_Handler
+BusFault_Handler
+UsageFault_Handler
+SVC_Handler
+DebugMon_Handler
+PendSV_Handler
+SysTick_Handler call:[HAL_IncTick] noreturn:[HAL_IncTick]
+DMA1_Channel1_IRQHandler global:[hdma_adc1] call:[HAL_DMA_IRQHandler] noreturn:[HAL_DMA_IRQHandler]
+EXTI9_5_IRQHandler global:[state] call:[LL_EXTI_ClearFlag_0_31,LL_EXTI_IsActiveFlag_0_31]
+TIM1_UP_IRQHandler global:[state] call:[LL_TIM_ClearFlag_UPDATE] noreturn:[LL_TIM_ClearFlag_UPDATE]

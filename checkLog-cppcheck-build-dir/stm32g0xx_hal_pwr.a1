@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="3724779898472778141">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_PWR_DeInit" lineNumber="73"/>
+    <functiondecl functionName="HAL_PWR_EnableBkUpAccess" lineNumber="228"/>
+    <functiondecl functionName="HAL_PWR_DisableBkUpAccess" lineNumber="238"/>
+    <functiondecl functionName="HAL_PWR_EnableWakeUpPin" lineNumber="262"/>
+    <functiondecl functionName="HAL_PWR_DisableWakeUpPin" lineNumber="284"/>
+    <functiondecl functionName="HAL_PWR_EnterSLEEPMode" lineNumber="318"/>
+    <functiondecl functionName="HAL_PWR_EnterSTOPMode" lineNumber="398"/>
+    <functiondecl functionName="HAL_PWR_EnterSTANDBYMode" lineNumber="453"/>
+    <functiondecl functionName="HAL_PWR_EnableSleepOnExit" lineNumber="480"/>
+    <functiondecl functionName="HAL_PWR_DisableSleepOnExit" lineNumber="494"/>
+    <functiondecl functionName="HAL_PWR_EnableSEVOnPend" lineNumber="508"/>
+    <functiondecl functionName="HAL_PWR_DisableSEVOnPend" lineNumber="521"/>
+    <functiondecl functionName="HAL_PWR_DeInit" lineNumber="73"/>
+    <functiondecl functionName="HAL_PWR_EnableBkUpAccess" lineNumber="228"/>
+    <functiondecl functionName="HAL_PWR_DisableBkUpAccess" lineNumber="238"/>
+    <functiondecl functionName="HAL_PWR_EnableWakeUpPin" lineNumber="262"/>
+    <functiondecl functionName="HAL_PWR_DisableWakeUpPin" lineNumber="284"/>
+    <functiondecl functionName="HAL_PWR_EnterSLEEPMode" lineNumber="318"/>
+    <functiondecl functionName="HAL_PWR_EnterSTOPMode" lineNumber="398"/>
+    <functiondecl functionName="HAL_PWR_EnterSTANDBYMode" lineNumber="453"/>
+    <functiondecl functionName="HAL_PWR_EnableSleepOnExit" lineNumber="480"/>
+    <functiondecl functionName="HAL_PWR_DisableSleepOnExit" lineNumber="494"/>
+    <functiondecl functionName="HAL_PWR_EnableSEVOnPend" lineNumber="508"/>
+    <functiondecl functionName="HAL_PWR_DisableSEVOnPend" lineNumber="521"/>
+    <functioncall functionName="APBRSTR1"/>
+    <functioncall functionName="CR1"/>
+    <functioncall functionName="HAL_PWREx_DisableLowPowerRunMode"/>
+    <functioncall functionName="HAL_PWREx_EnableLowPowerRunMode"/>
+    <functioncall functionName="PWR_CR1_DBP"/>
+    <functioncall functionName="PWR_CR1_LPMS"/>
+    <functioncall functionName="PWR_CR1_LPMS_0"/>
+    <functioncall functionName="PWR_CR1_LPMS_1"/>
+    <functioncall functionName="RCC_APBRSTR1_PWRRST"/>
+    <functioncall functionName="SCB_SCR_SEVONPEND_Msk"/>
+    <functioncall functionName="SCB_SCR_SLEEPDEEP_Msk"/>
+    <functioncall functionName="SCB_SCR_SLEEPONEXIT_Msk"/>
+    <functioncall functionName="SCR"/>
+    <functioncall functionName="__SEV"/>
+    <functioncall functionName="__WFE"/>
+    <functioncall functionName="__WFI"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="15323852707111799266">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b1xx.h&quot; not found." verbose="Include file: &quot;stm32g0b1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="109" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stddef.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_def.h" line="31" column="0"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;huart-&gt;gState&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;huart-&gt;gState&apos; is reassigned a value before the old one has been used." cwe="563" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="584" column="17" info="huart-&gt;gState is overwritten"/>
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="569" column="17" info="huart-&gt;gState is assigned"/>
+            <symbol>huart-&gt;gState</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pdata8bits&apos; can be reduced." verbose="The scope of the variable &apos;pdata8bits&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="719" column="13"/>
+            <symbol>pdata8bits</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pdata16bits&apos; can be reduced." verbose="The scope of the variable &apos;pdata16bits&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="720" column="13"/>
+            <symbol>pdata16bits</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tickstart&apos; can be reduced." verbose="The scope of the variable &apos;tickstart&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="722" column="12"/>
+            <symbol>tickstart</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;status&apos; can be reduced." verbose="The scope of the variable &apos;status&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="857" column="21"/>
+            <symbol>status</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;status&apos; can be reduced." verbose="The scope of the variable &apos;status&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="934" column="21"/>
+            <symbol>status</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rx_fifo_depth&apos; can be reduced." verbose="The scope of the variable &apos;rx_fifo_depth&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1055" column="11"/>
+            <symbol>rx_fifo_depth</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tx_fifo_depth&apos; can be reduced." verbose="The scope of the variable &apos;tx_fifo_depth&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1056" column="11"/>
+            <symbol>tx_fifo_depth</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rx_fifo_threshold&apos; can be reduced." verbose="The scope of the variable &apos;rx_fifo_threshold&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1057" column="11"/>
+            <symbol>rx_fifo_threshold</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;tx_fifo_threshold&apos; can be reduced." verbose="The scope of the variable &apos;tx_fifo_threshold&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1058" column="11"/>
+            <symbol>tx_fifo_threshold</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;huart&apos; can be declared as pointer to const" verbose="Parameter &apos;huart&apos; can be declared as pointer to const" cwe="398" file0="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c">
+            <location file="D:\Study\LogSTM\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c" line="1011" column="75" info="Parameter &apos;huart&apos; can be declared as pointer to const"/>
+            <symbol>huart</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1711:19" call-funcname="UART_WaitOnFlagUntilTimeout" call-argnr="3" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="458" col="34" call-argexpr="RESET" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:165:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="436" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:166:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="483" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:167:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="502" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:171:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="526" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="567" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="614" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="663" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:176:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="725" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:178:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="860" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:179:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="937" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:181:29" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1014" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:77:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1040" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:78:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1062" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:165:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="436" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:166:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="483" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:167:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="502" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:171:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="526" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="567" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="614" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="663" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:176:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="725" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:178:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="860" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:179:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="937" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:181:29" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1014" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:78:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1062" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1711:19" call-funcname="UART_WaitOnFlagUntilTimeout" call-argnr="3" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="458" col="34" call-argexpr="RESET" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:165:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="436" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:166:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="483" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:167:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="502" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:171:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="526" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="567" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="614" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="663" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:176:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="725" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:178:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="860" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:179:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="937" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:181:29" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1014" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:77:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1040" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:78:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1062" col="7" value="0"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:165:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="436" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:166:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="483" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:167:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="502" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:171:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="526" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:172:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="567" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:173:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="614" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:174:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="663" col="3" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:176:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="725" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:178:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="860" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:179:19" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="937" col="7" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h:181:29" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1014" col="10" value="0"/>
+    <unsafe-usage my-id="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c:78:13" my-argnr="1" my-argname="huart" file="D:/Study/LogSTM/Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_uart_ex.c" line="1062" col="7" value="0"/>
+  </FileInfo>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g030xx.h&quot; not found." verbose="Include file: &quot;stm32g030xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="125" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g031xx.h&quot; not found." verbose="Include file: &quot;stm32g031xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="121" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g041xx.h&quot; not found." verbose="Include file: &quot;stm32g041xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="123" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g050xx.h&quot; not found." verbose="Include file: &quot;stm32g050xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="131" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g051xx.h&quot; not found." verbose="Include file: &quot;stm32g051xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="127" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g061xx.h&quot; not found." verbose="Include file: &quot;stm32g061xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="129" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\core_cm0plus.h" line="34" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdint.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Include\cmsis_compiler.h" line="28" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g071xx.h&quot; not found." verbose="Include file: &quot;stm32g071xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="115" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g081xx.h&quot; not found." verbose="Include file: &quot;stm32g081xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="117" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0b0xx.h&quot; not found." verbose="Include file: &quot;stm32g0b0xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="113" column="0"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Include file: &quot;stm32g0c1xx.h&quot; not found." verbose="Include file: &quot;stm32g0c1xx.h&quot; not found.">
+            <location file="D:\Study\LogSTM\Drivers\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h" line="111" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="HAL_RS485Ex_Init" lineNumber="166"/>
+    <functiondecl functionName="HAL_UARTEx_WakeupCallback" lineNumber="272"/>
+    <functiondecl functionName="HAL_UARTEx_RxFifoFullCallback" lineNumber="287"/>
+    <functiondecl functionName="HAL_UARTEx_TxFifoEmptyCallback" lineNumber="302"/>
+    <functiondecl functionName="HAL_MultiProcessorEx_AddressLength_Set" lineNumber="387"/>
+    <functiondecl functionName="HAL_UARTEx_StopModeWakeUpSourceConfig" lineNumber="425"/>
+    <functiondecl functionName="HAL_UARTEx_EnableStopMode" lineNumber="480"/>
+    <functiondecl functionName="HAL_UARTEx_DisableStopMode" lineNumber="499"/>
+    <functiondecl functionName="HAL_UARTEx_EnableFifoMode" lineNumber="518"/>
+    <functiondecl functionName="HAL_UARTEx_DisableFifoMode" lineNumber="559"/>
+    <functiondecl functionName="HAL_UARTEx_SetTxFifoThreshold" lineNumber="605"/>
+    <functiondecl functionName="HAL_UARTEx_SetRxFifoThreshold" lineNumber="654"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle" lineNumber="716"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle_IT" lineNumber="855"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle_DMA" lineNumber="932"/>
+    <functiondecl functionName="HAL_UARTEx_GetRxEventType" lineNumber="1011"/>
+    <functiondecl functionName="UARTEx_Wakeup_AddressConfig" lineNumber="1035"/>
+    <functiondecl functionName="UARTEx_SetNbDataToProcess" lineNumber="1053"/>
+    <functiondecl functionName="HAL_RS485Ex_Init" lineNumber="166"/>
+    <functiondecl functionName="HAL_UARTEx_WakeupCallback" lineNumber="272"/>
+    <functiondecl functionName="HAL_UARTEx_RxFifoFullCallback" lineNumber="287"/>
+    <functiondecl functionName="HAL_UARTEx_TxFifoEmptyCallback" lineNumber="302"/>
+    <functiondecl functionName="HAL_MultiProcessorEx_AddressLength_Set" lineNumber="387"/>
+    <functiondecl functionName="HAL_UARTEx_StopModeWakeUpSourceConfig" lineNumber="425"/>
+    <functiondecl functionName="HAL_UARTEx_EnableStopMode" lineNumber="480"/>
+    <functiondecl functionName="HAL_UARTEx_DisableStopMode" lineNumber="499"/>
+    <functiondecl functionName="HAL_UARTEx_EnableFifoMode" lineNumber="518"/>
+    <functiondecl functionName="HAL_UARTEx_DisableFifoMode" lineNumber="559"/>
+    <functiondecl functionName="HAL_UARTEx_SetTxFifoThreshold" lineNumber="605"/>
+    <functiondecl functionName="HAL_UARTEx_SetRxFifoThreshold" lineNumber="654"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle" lineNumber="716"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle_IT" lineNumber="855"/>
+    <functiondecl functionName="HAL_UARTEx_ReceiveToIdle_DMA" lineNumber="932"/>
+    <functiondecl functionName="HAL_UARTEx_GetRxEventType" lineNumber="1011"/>
+    <functiondecl functionName="UARTEx_Wakeup_AddressConfig" lineNumber="1035"/>
+    <functiondecl functionName="UARTEx_SetNbDataToProcess" lineNumber="1053"/>
+    <functioncall functionName="HAL_BUSY"/>
+    <functioncall functionName="HAL_ERROR"/>
+    <functioncall functionName="HAL_GetTick"/>
+    <functioncall functionName="HAL_LOCKED"/>
+    <functioncall functionName="HAL_OK"/>
+    <functioncall functionName="HAL_TIMEOUT"/>
+    <functioncall functionName="HAL_UART_MspInit"/>
+    <functioncall functionName="HAL_UNLOCKED"/>
+    <functioncall functionName="NULL"/>
+    <functioncall functionName="RESET"/>
+    <functioncall functionName="UARTEx_SetNbDataToProcess"/>
+    <functioncall functionName="UARTEx_Wakeup_AddressConfig"/>
+    <functioncall functionName="UART_AdvFeatureConfig"/>
+    <functioncall functionName="UART_CheckIdleState"/>
+    <functioncall functionName="UART_SetConfig"/>
+    <functioncall functionName="UART_Start_Receive_DMA"/>
+    <functioncall functionName="UART_Start_Receive_IT"/>
+    <functioncall functionName="UART_WaitOnFlagUntilTimeout"/>
+    <functioncall functionName="USART_CR1_DEAT"/>
+    <functioncall functionName="USART_CR1_FIFOEN"/>
+    <functioncall functionName="USART_CR1_IDLEIE"/>
+    <functioncall functionName="USART_CR1_UESM"/>
+    <functioncall functionName="USART_CR2_ADD"/>
+    <functioncall functionName="USART_CR2_ADDM7"/>
+    <functioncall functionName="USART_CR3_DEM"/>
+    <functioncall functionName="USART_CR3_DEP"/>
+    <functioncall functionName="USART_CR3_RXFTCFG"/>
+    <functioncall functionName="USART_CR3_TXFTCFG"/>
+    <functioncall functionName="USART_CR3_WUS"/>
+    <functioncall functionName="USART_ICR_IDLECF"/>
+    <functioncall functionName="USART_ISR_IDLE"/>
+    <functioncall functionName="USART_ISR_REACK"/>
+    <functioncall functionName="USART_ISR_RXNE_RXFNE"/>
+    <functioncall functionName="__get_PRIMASK"/>
+    <functioncall functionName="__set_PRIMASK"/>
+  </FileInfo>
+</analyzerinfo>
