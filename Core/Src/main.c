@@ -101,8 +101,8 @@ int main(void)
     /* USER CODE END WHILE */
 	  HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
 	  HAL_Delay(1000);
-	  HAL_UART_Transmit(&huart2, str, 4, 30);
-	  //logI("Test: %d", 30);
+	 // HAL_UART_Transmit(&huart2, str, 4, 30);
+	  logI("Test %d Succses\r\n",1);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
