@@ -1,5 +1,8 @@
-logSTM.c:18:6:HAL_printf_valist	2
-logSTM.c:32:6:HAL_printf	1
-logSTM.c:45:6:logSTM	1
-logSTM.c:54:6:logI	1
-logSTM.c:66:6:logE	1
+stm32g0xx_ll_usart.h:3019:26:LL_USART_IsActiveFlag_TXE_TXFNF	2
+stm32g0xx_ll_usart.h:4276:22:LL_USART_TransmitData8	1
+logSTM.c:20:6:HAL_printf_valist	2
+logSTM.c:34:6:HAL_printf	1
+logSTM.c:47:6:logSTM	1
+logSTM.c:56:6:logI	1
+logSTM.c:68:6:logE	1
+logSTM.c:76:13:uart_transmit_buffer	3

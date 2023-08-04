@@ -7,9 +7,11 @@
 
 
 #include <logSTM.h>
-#include "stm32g0xx_hal.h"
-extern UART_HandleTypeDef huart2;
+#include "stm32g0xx_ll_usart.h"
 #define PRINT_BUFFER_SIZE 100
+
+
+static void uart_transmit_buffer(uint8_t* data, uint32_t size);
 
 /** Custom printf function in order to use HAL_UART_Transmit()
  * @param *fmt String to print
@@ -19,9 +21,9 @@ void HAL_printf_valist(const char *fmt, va_list argp) {
   char string[PRINT_BUFFER_SIZE];
 
   if (vsprintf(string, fmt, argp) > 0) {
-    HAL_UART_Transmit(&huart2, (uint8_t*)string, strlen(string), HAL_MAX_DELAY); // send message via UART
+	  uart_transmit_buffer((uint8_t*)string, strlen(string));
   } else {
-	HAL_UART_Transmit(&huart2, (uint8_t*)"E - Print\n", 14, HAL_MAX_DELAY);
+    uart_transmit_buffer((uint8_t*)"E - Print\n", 14);
   }
 }
 
@@ -69,4 +71,16 @@ void logE(const char* fmt, ...) {
   va_start(argp, fmt);
   logSTM('E', fmt, argp);
   va_end(argp);
+}
+
+static void uart_transmit_buffer(uint8_t* data, uint32_t size)
+{
+    for (uint32_t i = 0; i < size; i++)
+    {
+        // Проверка, готов ли UART для передачи данных
+        while (!LL_USART_IsActiveFlag_TXE(USART2));
+
+        // Запись данных в регистр передачи UART
+        LL_USART_TransmitData8(USART2, data[i]);
+    }
 }
