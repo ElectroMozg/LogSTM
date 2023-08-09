@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00017204  00000000  00000000  00029770  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000951a  00000000  00000000  00040974  2**0
+ 17 .debug_line   00009516  00000000  00000000  00040974  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00084b6e  00000000  00000000  00049e8e  2**0
+ 18 .debug_str    00084b7b  00000000  00000000  00049e8a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  000ce9fc  2**0
+ 19 .comment      00000050  00000000  00000000  000cea05  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002018  00000000  00000000  000cea4c  2**2
+ 20 .debug_frame  00002018  00000000  00000000  000cea58  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -883,147 +883,147 @@ __STATIC_INLINE void LL_USART_TransmitData8(USART_TypeDef *USARTx, uint8_t Value
  8000640:	bd80      	pop	{r7, pc}
 	...
 
-08000644 <HAL_printf_valist>:
-
-/** Custom printf function in order to use HAL_UART_Transmit()
+08000644 <logSTM>:
+ * @param uint8_t type - mark type log massage
  * @param *fmt String to print
  * @param argp Parameters list
  */
-void HAL_printf_valist(const char *fmt, va_list argp) {
- 8000644:	b590      	push	{r4, r7, lr}
- 8000646:	b09d      	sub	sp, #116	; 0x74
+void logSTM(uint8_t level, const char *fmt, va_list argp)
+{
+ 8000644:	b580      	push	{r7, lr}
+ 8000646:	b084      	sub	sp, #16
  8000648:	af00      	add	r7, sp, #0
- 800064a:	6078      	str	r0, [r7, #4]
- 800064c:	6039      	str	r1, [r7, #0]
-  char string[PRINT_BUFFER_SIZE];
-
-  if (vsprintf(string, fmt, argp) > 0) {
- 800064e:	683a      	ldr	r2, [r7, #0]
- 8000650:	6879      	ldr	r1, [r7, #4]
- 8000652:	240c      	movs	r4, #12
- 8000654:	193b      	adds	r3, r7, r4
- 8000656:	0018      	movs	r0, r3
- 8000658:	f001 fec0 	bl	80023dc <vsiprintf>
- 800065c:	1e03      	subs	r3, r0, #0
- 800065e:	dd0a      	ble.n	8000676 <HAL_printf_valist+0x32>
-	  uart_transmit_buffer((uint8_t*)string, strlen(string));
- 8000660:	193b      	adds	r3, r7, r4
- 8000662:	0018      	movs	r0, r3
- 8000664:	f7ff fd4c 	bl	8000100 <strlen>
- 8000668:	0002      	movs	r2, r0
- 800066a:	193b      	adds	r3, r7, r4
- 800066c:	0011      	movs	r1, r2
- 800066e:	0018      	movs	r0, r3
- 8000670:	f000 f850 	bl	8000714 <uart_transmit_buffer>
-  } else {
-    uart_transmit_buffer((uint8_t*)"E - Print\n", 14);
-  }
+ 800064a:	60b9      	str	r1, [r7, #8]
+ 800064c:	607a      	str	r2, [r7, #4]
+ 800064e:	210f      	movs	r1, #15
+ 8000650:	187b      	adds	r3, r7, r1
+ 8000652:	1c02      	adds	r2, r0, #0
+ 8000654:	701a      	strb	r2, [r3, #0]
+	logSTM_printf("%c - ", level);
+ 8000656:	187b      	adds	r3, r7, r1
+ 8000658:	781a      	ldrb	r2, [r3, #0]
+ 800065a:	4b07      	ldr	r3, [pc, #28]	; (8000678 <logSTM+0x34>)
+ 800065c:	0011      	movs	r1, r2
+ 800065e:	0018      	movs	r0, r3
+ 8000660:	f000 f844 	bl	80006ec <logSTM_printf>
+	logSTM_printf_valist(fmt, argp);
+ 8000664:	687a      	ldr	r2, [r7, #4]
+ 8000666:	68bb      	ldr	r3, [r7, #8]
+ 8000668:	0011      	movs	r1, r2
+ 800066a:	0018      	movs	r0, r3
+ 800066c:	f000 f81a 	bl	80006a4 <logSTM_printf_valist>
 }
- 8000674:	e004      	b.n	8000680 <HAL_printf_valist+0x3c>
-    uart_transmit_buffer((uint8_t*)"E - Print\n", 14);
- 8000676:	4b04      	ldr	r3, [pc, #16]	; (8000688 <HAL_printf_valist+0x44>)
- 8000678:	210e      	movs	r1, #14
- 800067a:	0018      	movs	r0, r3
- 800067c:	f000 f84a 	bl	8000714 <uart_transmit_buffer>
-}
- 8000680:	46c0      	nop			; (mov r8, r8)
- 8000682:	46bd      	mov	sp, r7
- 8000684:	b01d      	add	sp, #116	; 0x74
- 8000686:	bd90      	pop	{r4, r7, pc}
- 8000688:	08002ca0 	.word	0x08002ca0
+ 8000670:	46c0      	nop			; (mov r8, r8)
+ 8000672:	46bd      	mov	sp, r7
+ 8000674:	b004      	add	sp, #16
+ 8000676:	bd80      	pop	{r7, pc}
+ 8000678:	08002ca0 	.word	0x08002ca0
 
-0800068c <HAL_printf>:
-
-/** Custom printf function, only translate to va_list arg HAL_UART.
- * @param *fmt String to print
- * @param ... Data
- */
-void HAL_printf(const char *fmt, ...) {
- 800068c:	b40f      	push	{r0, r1, r2, r3}
- 800068e:	b580      	push	{r7, lr}
- 8000690:	b082      	sub	sp, #8
- 8000692:	af00      	add	r7, sp, #0
-  va_list argp;
-
-  va_start(argp, fmt);
- 8000694:	2314      	movs	r3, #20
- 8000696:	18fb      	adds	r3, r7, r3
- 8000698:	607b      	str	r3, [r7, #4]
-  HAL_printf_valist(fmt, argp);
- 800069a:	687a      	ldr	r2, [r7, #4]
- 800069c:	693b      	ldr	r3, [r7, #16]
- 800069e:	0011      	movs	r1, r2
- 80006a0:	0018      	movs	r0, r3
- 80006a2:	f7ff ffcf 	bl	8000644 <HAL_printf_valist>
-  va_end(argp);
-}
- 80006a6:	46c0      	nop			; (mov r8, r8)
- 80006a8:	46bd      	mov	sp, r7
- 80006aa:	b002      	add	sp, #8
- 80006ac:	bc80      	pop	{r7}
- 80006ae:	bc08      	pop	{r3}
- 80006b0:	b004      	add	sp, #16
- 80006b2:	4718      	bx	r3
-
-080006b4 <logSTM>:
-/** Generic LOG procedure
- * @param Log level
- * @param *fmt String to print
- * @param argp Parameters list
- */
-void logSTM(uint8_t level, const char *fmt, va_list argp) {
- 80006b4:	b580      	push	{r7, lr}
- 80006b6:	b084      	sub	sp, #16
- 80006b8:	af00      	add	r7, sp, #0
- 80006ba:	60b9      	str	r1, [r7, #8]
- 80006bc:	607a      	str	r2, [r7, #4]
- 80006be:	210f      	movs	r1, #15
- 80006c0:	187b      	adds	r3, r7, r1
- 80006c2:	1c02      	adds	r2, r0, #0
- 80006c4:	701a      	strb	r2, [r3, #0]
-	HAL_printf("%c - ", level);
- 80006c6:	187b      	adds	r3, r7, r1
- 80006c8:	781a      	ldrb	r2, [r3, #0]
- 80006ca:	4b07      	ldr	r3, [pc, #28]	; (80006e8 <logSTM+0x34>)
- 80006cc:	0011      	movs	r1, r2
- 80006ce:	0018      	movs	r0, r3
- 80006d0:	f7ff ffdc 	bl	800068c <HAL_printf>
-	HAL_printf_valist(fmt, argp);
- 80006d4:	687a      	ldr	r2, [r7, #4]
- 80006d6:	68bb      	ldr	r3, [r7, #8]
- 80006d8:	0011      	movs	r1, r2
- 80006da:	0018      	movs	r0, r3
- 80006dc:	f7ff ffb2 	bl	8000644 <HAL_printf_valist>
-}
- 80006e0:	46c0      	nop			; (mov r8, r8)
- 80006e2:	46bd      	mov	sp, r7
- 80006e4:	b004      	add	sp, #16
- 80006e6:	bd80      	pop	{r7, pc}
- 80006e8:	08002cac 	.word	0x08002cac
-
-080006ec <logI>:
-
-/** LOG procedure - Info
+0800067c <logI>:
+/** logI() generic LOG  "Info" massage
  * @param *fmt String to print
  * @param ... Parameters list
  */
-void logI(const char* fmt, ...) {
+void logI(const char* fmt, ...)
+{
+ 800067c:	b40f      	push	{r0, r1, r2, r3}
+ 800067e:	b580      	push	{r7, lr}
+ 8000680:	b082      	sub	sp, #8
+ 8000682:	af00      	add	r7, sp, #0
+	va_list argp;
+
+	va_start(argp, fmt);
+ 8000684:	2314      	movs	r3, #20
+ 8000686:	18fb      	adds	r3, r7, r3
+ 8000688:	607b      	str	r3, [r7, #4]
+	logSTM('I', fmt, argp);
+ 800068a:	687a      	ldr	r2, [r7, #4]
+ 800068c:	693b      	ldr	r3, [r7, #16]
+ 800068e:	0019      	movs	r1, r3
+ 8000690:	2049      	movs	r0, #73	; 0x49
+ 8000692:	f7ff ffd7 	bl	8000644 <logSTM>
+	va_end(argp);
+}
+ 8000696:	46c0      	nop			; (mov r8, r8)
+ 8000698:	46bd      	mov	sp, r7
+ 800069a:	b002      	add	sp, #8
+ 800069c:	bc80      	pop	{r7}
+ 800069e:	bc08      	pop	{r3}
+ 80006a0:	b004      	add	sp, #16
+ 80006a2:	4718      	bx	r3
+
+080006a4 <logSTM_printf_valist>:
+/*-------------------------------------------------*/
+//Local Function
+/*-------------------------------------------------*/
+
+static void logSTM_printf_valist(const char *fmt, va_list argp)
+{
+ 80006a4:	b590      	push	{r4, r7, lr}
+ 80006a6:	b09d      	sub	sp, #116	; 0x74
+ 80006a8:	af00      	add	r7, sp, #0
+ 80006aa:	6078      	str	r0, [r7, #4]
+ 80006ac:	6039      	str	r1, [r7, #0]
+	char string[PRINT_BUFFER_SIZE];
+
+	if (vsprintf(string, fmt, argp) > 0)
+ 80006ae:	683a      	ldr	r2, [r7, #0]
+ 80006b0:	6879      	ldr	r1, [r7, #4]
+ 80006b2:	240c      	movs	r4, #12
+ 80006b4:	193b      	adds	r3, r7, r4
+ 80006b6:	0018      	movs	r0, r3
+ 80006b8:	f001 fe90 	bl	80023dc <vsiprintf>
+ 80006bc:	1e03      	subs	r3, r0, #0
+ 80006be:	dd0a      	ble.n	80006d6 <logSTM_printf_valist+0x32>
+	{
+		logSTM_uart_transmit_buffer((uint8_t*)string, strlen(string));
+ 80006c0:	193b      	adds	r3, r7, r4
+ 80006c2:	0018      	movs	r0, r3
+ 80006c4:	f7ff fd1c 	bl	8000100 <strlen>
+ 80006c8:	0002      	movs	r2, r0
+ 80006ca:	193b      	adds	r3, r7, r4
+ 80006cc:	0011      	movs	r1, r2
+ 80006ce:	0018      	movs	r0, r3
+ 80006d0:	f000 f820 	bl	8000714 <logSTM_uart_transmit_buffer>
+	}
+	else
+	{
+		logSTM_uart_transmit_buffer((uint8_t*)"E - Print\n", 14);
+	}
+}
+ 80006d4:	e004      	b.n	80006e0 <logSTM_printf_valist+0x3c>
+		logSTM_uart_transmit_buffer((uint8_t*)"E - Print\n", 14);
+ 80006d6:	4b04      	ldr	r3, [pc, #16]	; (80006e8 <logSTM_printf_valist+0x44>)
+ 80006d8:	210e      	movs	r1, #14
+ 80006da:	0018      	movs	r0, r3
+ 80006dc:	f000 f81a 	bl	8000714 <logSTM_uart_transmit_buffer>
+}
+ 80006e0:	46c0      	nop			; (mov r8, r8)
+ 80006e2:	46bd      	mov	sp, r7
+ 80006e4:	b01d      	add	sp, #116	; 0x74
+ 80006e6:	bd90      	pop	{r4, r7, pc}
+ 80006e8:	08002ca8 	.word	0x08002ca8
+
+080006ec <logSTM_printf>:
+
+static void logSTM_printf(const char *fmt, ...)
+{
  80006ec:	b40f      	push	{r0, r1, r2, r3}
  80006ee:	b580      	push	{r7, lr}
  80006f0:	b082      	sub	sp, #8
  80006f2:	af00      	add	r7, sp, #0
-  va_list argp;
+	va_list argp;
 
 	va_start(argp, fmt);
  80006f4:	2314      	movs	r3, #20
  80006f6:	18fb      	adds	r3, r7, r3
  80006f8:	607b      	str	r3, [r7, #4]
-	logSTM('I', fmt, argp);
+	logSTM_printf_valist(fmt, argp);
  80006fa:	687a      	ldr	r2, [r7, #4]
  80006fc:	693b      	ldr	r3, [r7, #16]
- 80006fe:	0019      	movs	r1, r3
- 8000700:	2049      	movs	r0, #73	; 0x49
- 8000702:	f7ff ffd7 	bl	80006b4 <logSTM>
+ 80006fe:	0011      	movs	r1, r2
+ 8000700:	0018      	movs	r0, r3
+ 8000702:	f7ff ffcf 	bl	80006a4 <logSTM_printf_valist>
 	va_end(argp);
 }
  8000706:	46c0      	nop			; (mov r8, r8)
@@ -1034,51 +1034,45 @@ void logI(const char* fmt, ...) {
  8000710:	b004      	add	sp, #16
  8000712:	4718      	bx	r3
 
-08000714 <uart_transmit_buffer>:
-  logSTM('E', fmt, argp);
-  va_end(argp);
-}
+08000714 <logSTM_uart_transmit_buffer>:
 
-static void uart_transmit_buffer(uint8_t* data, uint32_t size)
+static void logSTM_uart_transmit_buffer(uint8_t* data, uint32_t size)
 {
  8000714:	b580      	push	{r7, lr}
  8000716:	b084      	sub	sp, #16
  8000718:	af00      	add	r7, sp, #0
  800071a:	6078      	str	r0, [r7, #4]
  800071c:	6039      	str	r1, [r7, #0]
-    for (uint32_t i = 0; i < size; i++)
+	for (uint32_t i = 0; i < size; i++)
  800071e:	2300      	movs	r3, #0
  8000720:	60fb      	str	r3, [r7, #12]
- 8000722:	e012      	b.n	800074a <uart_transmit_buffer+0x36>
-    {
-        // Проверка, готов ли UART для передачи данных
-        while (!LL_USART_IsActiveFlag_TXE(USART2));
+ 8000722:	e012      	b.n	800074a <logSTM_uart_transmit_buffer+0x36>
+	{
+		while (!LL_USART_IsActiveFlag_TXE(USART2));
  8000724:	46c0      	nop			; (mov r8, r8)
- 8000726:	4b0d      	ldr	r3, [pc, #52]	; (800075c <uart_transmit_buffer+0x48>)
+ 8000726:	4b0d      	ldr	r3, [pc, #52]	; (800075c <logSTM_uart_transmit_buffer+0x48>)
  8000728:	0018      	movs	r0, r3
  800072a:	f7ff ff6a 	bl	8000602 <LL_USART_IsActiveFlag_TXE_TXFNF>
  800072e:	1e03      	subs	r3, r0, #0
- 8000730:	d0f9      	beq.n	8000726 <uart_transmit_buffer+0x12>
-
-        // Запись данных в регистр передачи UART
-        LL_USART_TransmitData8(USART2, data[i]);
+ 8000730:	d0f9      	beq.n	8000726 <logSTM_uart_transmit_buffer+0x12>
+		LL_USART_TransmitData8(USART2, data[i]);
  8000732:	687a      	ldr	r2, [r7, #4]
  8000734:	68fb      	ldr	r3, [r7, #12]
  8000736:	18d3      	adds	r3, r2, r3
  8000738:	781b      	ldrb	r3, [r3, #0]
- 800073a:	4a08      	ldr	r2, [pc, #32]	; (800075c <uart_transmit_buffer+0x48>)
+ 800073a:	4a08      	ldr	r2, [pc, #32]	; (800075c <logSTM_uart_transmit_buffer+0x48>)
  800073c:	0019      	movs	r1, r3
  800073e:	0010      	movs	r0, r2
  8000740:	f7ff ff70 	bl	8000624 <LL_USART_TransmitData8>
-    for (uint32_t i = 0; i < size; i++)
+	for (uint32_t i = 0; i < size; i++)
  8000744:	68fb      	ldr	r3, [r7, #12]
  8000746:	3301      	adds	r3, #1
  8000748:	60fb      	str	r3, [r7, #12]
  800074a:	68fa      	ldr	r2, [r7, #12]
  800074c:	683b      	ldr	r3, [r7, #0]
  800074e:	429a      	cmp	r2, r3
- 8000750:	d3e8      	bcc.n	8000724 <uart_transmit_buffer+0x10>
-    }
+ 8000750:	d3e8      	bcc.n	8000724 <logSTM_uart_transmit_buffer+0x10>
+	}
 }
  8000752:	46c0      	nop			; (mov r8, r8)
  8000754:	46c0      	nop			; (mov r8, r8)
@@ -1377,7 +1371,7 @@ int main(void)
  80008d6:	4b06      	ldr	r3, [pc, #24]	; (80008f0 <main+0x84>)
  80008d8:	0011      	movs	r1, r2
  80008da:	0018      	movs	r0, r3
- 80008dc:	f7ff ff06 	bl	80006ec <logI>
+ 80008dc:	f7ff fece 	bl	800067c <logI>
 	  LL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
  80008e0:	e7e1      	b.n	80008a6 <main+0x3a>
  80008e2:	46c0      	nop			; (mov r8, r8)
@@ -1475,12 +1469,12 @@ __STATIC_FORCEINLINE void __disable_irq(void)
  800094c:	e7fe      	b.n	800094c <Error_Handler+0x8>
 
 0800094e <initQueue>:
- */
-#include "queue.h"
+/*-------------------------------------------------*/
+//Global Function
+/*-------------------------------------------------*/
 
-#include "logSTM.h"
-
-void initQueue(Queue* queue) {
+void initQueue(Queue* queue)
+{
  800094e:	b580      	push	{r7, lr}
  8000950:	b082      	sub	sp, #8
  8000952:	af00      	add	r7, sp, #0
@@ -1509,7 +1503,8 @@ void initQueue(Queue* queue) {
 
 08000978 <isQueueEmpty>:
 
-int isQueueEmpty(Queue* queue) {
+int isQueueEmpty(Queue* queue)
+{
  8000978:	b580      	push	{r7, lr}
  800097a:	b082      	sub	sp, #8
  800097c:	af00      	add	r7, sp, #0
@@ -1529,7 +1524,8 @@ int isQueueEmpty(Queue* queue) {
 
 08000994 <isQueueFull>:
 
-int isQueueFull(Queue* queue) {
+int isQueueFull(Queue* queue)
+{
  8000994:	b580      	push	{r7, lr}
  8000996:	b082      	sub	sp, #8
  8000998:	af00      	add	r7, sp, #0
@@ -1551,22 +1547,24 @@ int isQueueFull(Queue* queue) {
 
 080009b4 <enqueue>:
 
-void enqueue(Queue* queue, const char* item) {
+void enqueue(Queue* queue, const char* item)
+{
  80009b4:	b580      	push	{r7, lr}
  80009b6:	b082      	sub	sp, #8
  80009b8:	af00      	add	r7, sp, #0
  80009ba:	6078      	str	r0, [r7, #4]
  80009bc:	6039      	str	r1, [r7, #0]
-    if (isQueueFull(queue)) {
+    if (isQueueFull(queue))
  80009be:	687b      	ldr	r3, [r7, #4]
  80009c0:	0018      	movs	r0, r3
  80009c2:	f7ff ffe7 	bl	8000994 <isQueueFull>
  80009c6:	1e03      	subs	r3, r0, #0
  80009c8:	d004      	beq.n	80009d4 <enqueue+0x20>
+    {
     	logI("Queue is full. Unable to enqueue.\n");
  80009ca:	4b1c      	ldr	r3, [pc, #112]	; (8000a3c <enqueue+0x88>)
  80009cc:	0018      	movs	r0, r3
- 80009ce:	f7ff fe8d 	bl	80006ec <logI>
+ 80009ce:	f7ff fe55 	bl	800067c <logI>
         return;
  80009d2:	e02f      	b.n	8000a34 <enqueue+0x80>
     }
@@ -1628,21 +1626,23 @@ void enqueue(Queue* queue, const char* item) {
 
 08000a40 <dequeue>:
 
-char* dequeue(Queue* queue) {
+char* dequeue(Queue* queue)
+{
  8000a40:	b580      	push	{r7, lr}
  8000a42:	b084      	sub	sp, #16
  8000a44:	af00      	add	r7, sp, #0
  8000a46:	6078      	str	r0, [r7, #4]
-    if (isQueueEmpty(queue)) {
+    if (isQueueEmpty(queue))
  8000a48:	687b      	ldr	r3, [r7, #4]
  8000a4a:	0018      	movs	r0, r3
  8000a4c:	f7ff ff94 	bl	8000978 <isQueueEmpty>
  8000a50:	1e03      	subs	r3, r0, #0
  8000a52:	d005      	beq.n	8000a60 <dequeue+0x20>
+    {
     	logI("Queue is empty. Unable to dequeue.\n");
  8000a54:	4b14      	ldr	r3, [pc, #80]	; (8000aa8 <dequeue+0x68>)
  8000a56:	0018      	movs	r0, r3
- 8000a58:	f7ff fe48 	bl	80006ec <logI>
+ 8000a58:	f7ff fe10 	bl	800067c <logI>
         return NULL;
  8000a5c:	2300      	movs	r3, #0
  8000a5e:	e01e      	b.n	8000a9e <dequeue+0x5e>
@@ -3426,12 +3426,12 @@ __STATIC_FORCEINLINE void __set_PRIMASK(uint32_t priMask)
  80014ea:	bd80      	pop	{r7, pc}
 
 080014ec <uart_init>:
+
 uint8_t usart_rx_dma_buffer[24];
-extern   Queue queue;
 
 
-
-void uart_init(void){
+void uart_init(void)
+{
  80014ec:	b590      	push	{r4, r7, lr}
  80014ee:	b08f      	sub	sp, #60	; 0x3c
  80014f0:	af00      	add	r7, sp, #0
@@ -3702,20 +3702,20 @@ void uart_init(void){
  80016c4:	20000164 	.word	0x20000164
 
 080016c8 <uart_rx_check>:
-        // Запись данных в регистр передачи UART
-        LL_USART_TransmitData8(USART2, data[i]);
-    }
-}
 
-void uart_rx_check(void){
+/**uart_rx_check() check buffer dma for new data
+ * need add uart_rx_check() in IDLE check in USARTx_IRQHandler
+ */
+void uart_rx_check(void)
+{
  80016c8:	b580      	push	{r7, lr}
  80016ca:	b08a      	sub	sp, #40	; 0x28
  80016cc:	af00      	add	r7, sp, #0
-
     static size_t old_pos;
     size_t pos;
 
     /* Calculate current position in buffer and check for new data available */
+    //LL_DMA_GetDataLength - returns how many bytes are left in the dma buffer before it is full
     pos = ARRAY_LEN(usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA1, LL_DMA_CHANNEL_1);
  80016ce:	4b40      	ldr	r3, [pc, #256]	; (80017d0 <uart_rx_check+0x108>)
  80016d0:	2100      	movs	r1, #0
@@ -3725,26 +3725,28 @@ void uart_rx_check(void){
  80016da:	2218      	movs	r2, #24
  80016dc:	1ad3      	subs	r3, r2, r3
  80016de:	61bb      	str	r3, [r7, #24]
-    if (pos != old_pos) {                       /* Check change in received data */
+    if (pos != old_pos)
  80016e0:	4b3c      	ldr	r3, [pc, #240]	; (80017d4 <uart_rx_check+0x10c>)
  80016e2:	681b      	ldr	r3, [r3, #0]
  80016e4:	69ba      	ldr	r2, [r7, #24]
  80016e6:	429a      	cmp	r2, r3
  80016e8:	d06d      	beq.n	80017c6 <uart_rx_check+0xfe>
+    {
 
     	char string[20];
-        if (pos > old_pos) {                    /* Current position is over previous one */
+        if (pos > old_pos)
  80016ea:	4b3a      	ldr	r3, [pc, #232]	; (80017d4 <uart_rx_check+0x10c>)
  80016ec:	681b      	ldr	r3, [r3, #0]
  80016ee:	69ba      	ldr	r2, [r7, #24]
  80016f0:	429a      	cmp	r2, r3
  80016f2:	d927      	bls.n	8001744 <uart_rx_check+0x7c>
-
-            for (int i = 0; i <= pos - old_pos -1; i++) {
+        {
+            for (int i = 0; i <= pos - old_pos -1; i++)
  80016f4:	2300      	movs	r3, #0
  80016f6:	627b      	str	r3, [r7, #36]	; 0x24
  80016f8:	e00d      	b.n	8001716 <uart_rx_check+0x4e>
-            	string[i] = (char)usart_rx_dma_buffer[old_pos+i]; // Явное приведение типов
+            {
+            	string[i] = (char)usart_rx_dma_buffer[old_pos+i];
  80016fa:	4b36      	ldr	r3, [pc, #216]	; (80017d4 <uart_rx_check+0x10c>)
  80016fc:	681a      	ldr	r2, [r3, #0]
  80016fe:	6a7b      	ldr	r3, [r7, #36]	; 0x24
@@ -3756,7 +3758,7 @@ void uart_rx_check(void){
  800170a:	18d3      	adds	r3, r2, r3
  800170c:	1c0a      	adds	r2, r1, #0
  800170e:	701a      	strb	r2, [r3, #0]
-            for (int i = 0; i <= pos - old_pos -1; i++) {
+            for (int i = 0; i <= pos - old_pos -1; i++)
  8001710:	6a7b      	ldr	r3, [r7, #36]	; 0x24
  8001712:	3301      	adds	r3, #1
  8001714:	627b      	str	r3, [r7, #36]	; 0x24
@@ -3785,14 +3787,15 @@ void uart_rx_check(void){
  800173c:	0018      	movs	r0, r3
  800173e:	f7ff f939 	bl	80009b4 <enqueue>
  8001742:	e03d      	b.n	80017c0 <uart_rx_check+0xf8>
-            //usart_process_data(&usart_rx_dma_buffer[old_pos], pos - old_pos);
-        } else {
-
-            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++) {
+        }
+        else
+        {
+            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++)
  8001744:	2300      	movs	r3, #0
  8001746:	623b      	str	r3, [r7, #32]
  8001748:	e00d      	b.n	8001766 <uart_rx_check+0x9e>
-            	string[i] = (char)usart_rx_dma_buffer[old_pos+i]; // Явное приведение типов
+            {
+            	string[i] = (char)usart_rx_dma_buffer[old_pos+i];
  800174a:	4b22      	ldr	r3, [pc, #136]	; (80017d4 <uart_rx_check+0x10c>)
  800174c:	681a      	ldr	r2, [r3, #0]
  800174e:	6a3b      	ldr	r3, [r7, #32]
@@ -3804,7 +3807,7 @@ void uart_rx_check(void){
  800175a:	18d3      	adds	r3, r2, r3
  800175c:	1c0a      	adds	r2, r1, #0
  800175e:	701a      	strb	r2, [r3, #0]
-            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++) {
+            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++)
  8001760:	6a3b      	ldr	r3, [r7, #32]
  8001762:	3301      	adds	r3, #1
  8001764:	623b      	str	r3, [r7, #32]
@@ -3817,18 +3820,16 @@ void uart_rx_check(void){
  8001772:	d2ea      	bcs.n	800174a <uart_rx_check+0x82>
             }
 
-
-            //usart_process_data(&usart_rx_dma_buffer[old_pos], ARRAY_LEN(usart_rx_dma_buffer) - old_pos);
-            if (pos > 0) {
+            if (pos > 0)
  8001774:	69bb      	ldr	r3, [r7, #24]
  8001776:	2b00      	cmp	r3, #0
  8001778:	d014      	beq.n	80017a4 <uart_rx_check+0xdc>
-                //usart_process_data(&usart_rx_dma_buffer[0], pos);
-
-                for (int i = 0; i <= pos; i++) {
+            {
+                for (int i = 0; i <= pos; i++)
  800177a:	2300      	movs	r3, #0
  800177c:	61fb      	str	r3, [r7, #28]
  800177e:	e00d      	b.n	800179c <uart_rx_check+0xd4>
+                {
                 	string[ARRAY_LEN(usart_rx_dma_buffer) - old_pos+ i] = (char)usart_rx_dma_buffer[0+i]; // Явное приведение типов
  8001780:	69fa      	ldr	r2, [r7, #28]
  8001782:	4b14      	ldr	r3, [pc, #80]	; (80017d4 <uart_rx_check+0x10c>)
@@ -3841,7 +3842,7 @@ void uart_rx_check(void){
  8001790:	7811      	ldrb	r1, [r2, #0]
  8001792:	1d3a      	adds	r2, r7, #4
  8001794:	54d1      	strb	r1, [r2, r3]
-                for (int i = 0; i <= pos; i++) {
+                for (int i = 0; i <= pos; i++)
  8001796:	69fb      	ldr	r3, [r7, #28]
  8001798:	3301      	adds	r3, #1
  800179a:	61fb      	str	r3, [r7, #28]
@@ -3851,6 +3852,7 @@ void uart_rx_check(void){
  80017a2:	d2ed      	bcs.n	8001780 <uart_rx_check+0xb8>
                 }
             }
+
             string[strlen(string)] = '\0';
  80017a4:	1d3b      	adds	r3, r7, #4
  80017a6:	0018      	movs	r0, r3
@@ -3866,7 +3868,7 @@ void uart_rx_check(void){
  80017ba:	0018      	movs	r0, r3
  80017bc:	f7ff f8fa 	bl	80009b4 <enqueue>
         }
-        old_pos = pos;                          /* Save current position as old for next transfers */
+        old_pos = pos;
  80017c0:	4b04      	ldr	r3, [pc, #16]	; (80017d4 <uart_rx_check+0x10c>)
  80017c2:	69ba      	ldr	r2, [r7, #24]
  80017c4:	601a      	str	r2, [r3, #0]

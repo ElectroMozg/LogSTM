@@ -1,10 +1,3 @@
-/*
- * usartMy.h
- *
- *  Created on: Aug 4, 2023
- *      Author: user
- */
-
 #ifndef SRC_USARTMY_H_
 #define SRC_USARTMY_H_
 

@@ -1,10 +1,3 @@
-/*
- * queue.h
- *
- *  Created on: Aug 4, 2023
- *      Author: user
- */
-
 #ifndef INC_QUEUE_H_
 #define INC_QUEUE_H_
 
@@ -20,7 +13,6 @@ typedef struct {
     int rear;
     int count;
 } Queue;
-
 
 void initQueue(Queue* queue);
 int isQueueEmpty(Queue* queue);

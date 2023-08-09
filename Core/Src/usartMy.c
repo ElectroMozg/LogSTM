@@ -1,12 +1,4 @@
-/*
- * usartMy.c
- *
- *  Created on: Aug 4, 2023
- *      Author: user
- */
-
 #include "usartMy.h"
-#include "queue.h"
 
 #include "stm32g0xx_ll_dma.h"
 #include "stm32g0xx_ll_bus.h"
@@ -16,16 +8,19 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "queue.h"
 
 #define ARRAY_LEN(x)            (sizeof(x) / sizeof((x)[0]))
 
-uint8_t usart_rx_dma_buffer[24];
 extern   Queue queue;
 
+uint8_t usart_rx_dma_buffer[24];
 
-
-void uart_init(void){
-
+/**uart_init() init uart
+ * Note: use stm32g07rb
+ */
+void uart_init(void)
+{
 	LL_USART_InitTypeDef USART_InitStruct = {0};
 	LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 
@@ -96,55 +91,59 @@ void uart_init(void){
 	LL_USART_Enable(USART2);
 }
 
-void uart_transmit_buffer(uint8_t* data, uint32_t size){
-
+void uart_transmit_buffer(uint8_t* data, uint32_t size)
+{
     for (uint32_t i = 0; i < size; i++)
     {
-        // Проверка, готов ли UART для передачи данных
         while (!LL_USART_IsActiveFlag_TXE(USART2));
-
-        // Запись данных в регистр передачи UART
         LL_USART_TransmitData8(USART2, data[i]);
     }
 }
 
-void uart_rx_check(void){
+/**uart_rx_check() check buffer dma for new data
+ * need add uart_rx_check() in IDLE check in USARTx_IRQHandler
+ */
+void uart_rx_check(void)
+{
 
     static size_t old_pos;
     size_t pos;
 
     /* Calculate current position in buffer and check for new data available */
+    //LL_DMA_GetDataLength - returns how many bytes are left in the dma buffer before it is full
     pos = ARRAY_LEN(usart_rx_dma_buffer) - LL_DMA_GetDataLength(DMA1, LL_DMA_CHANNEL_1);
-    if (pos != old_pos) {                       /* Check change in received data */
+    if (pos != old_pos)
+    {
 
     	char string[20];
-        if (pos > old_pos) {                    /* Current position is over previous one */
-
-            for (int i = 0; i <= pos - old_pos -1; i++) {
-            	string[i] = (char)usart_rx_dma_buffer[old_pos+i]; // Явное приведение типов
+        if (pos > old_pos)
+        {
+            for (int i = 0; i <= pos - old_pos -1; i++)
+            {
+            	string[i] = (char)usart_rx_dma_buffer[old_pos+i];
             }
 
             string[strlen(string)] = '\0';
         	enqueue(&queue, string);
-            //usart_process_data(&usart_rx_dma_buffer[old_pos], pos - old_pos);
-        } else {
-
-            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++) {
-            	string[i] = (char)usart_rx_dma_buffer[old_pos+i]; // Явное приведение типов
+        }
+        else
+        {
+            for (int i = 0; i <= ARRAY_LEN(usart_rx_dma_buffer) - old_pos -1; i++)
+            {
+            	string[i] = (char)usart_rx_dma_buffer[old_pos+i];
             }
 
-
-            //usart_process_data(&usart_rx_dma_buffer[old_pos], ARRAY_LEN(usart_rx_dma_buffer) - old_pos);
-            if (pos > 0) {
-                //usart_process_data(&usart_rx_dma_buffer[0], pos);
-
-                for (int i = 0; i <= pos; i++) {
+            if (pos > 0)
+            {
+                for (int i = 0; i <= pos; i++)
+                {
                 	string[ARRAY_LEN(usart_rx_dma_buffer) - old_pos+ i] = (char)usart_rx_dma_buffer[0+i]; // Явное приведение типов
                 }
             }
+
             string[strlen(string)] = '\0';
             enqueue(&queue, string);
         }
-        old_pos = pos;                          /* Save current position as old for next transfers */
+        old_pos = pos;
     }
 }

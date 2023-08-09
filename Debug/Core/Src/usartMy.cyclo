@@ -29,6 +29,6 @@ stm32g0xx_ll_usart.h:3459:22:LL_USART_EnableIT_IDLE	1
 stm32g0xx_ll_usart.h:4118:22:LL_USART_EnableDMAReq_RX	1
 stm32g0xx_ll_usart.h:4221:26:LL_USART_DMA_GetRegAddr	2
 stm32g0xx_ll_usart.h:4276:22:LL_USART_TransmitData8	1
-usartMy.c:27:6:uart_init	1
-usartMy.c:99:6:uart_transmit_buffer	3
-usartMy.c:111:6:uart_rx_check	7
+usartMy.c:21:6:uart_init	1
+usartMy.c:94:6:uart_transmit_buffer	3
+usartMy.c:106:6:uart_rx_check	7
